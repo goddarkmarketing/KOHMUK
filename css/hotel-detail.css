@@ -323,10 +323,76 @@
   border-bottom: 0;
   border-radius: 0 0 0 12px;
 }
+.hd-rate-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px 16px;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+.hd-rate-bar__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 180px;
+}
+.hd-rate-bar__label {
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.hd-rate-bar__input {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+.hd-rate-bar__input:focus {
+  outline: 2px solid color-mix(in srgb, var(--muk-blue) 35%, transparent);
+  border-color: var(--muk-blue);
+}
+.hd-rate-bar__hint {
+  flex: 1 1 220px;
+  margin: 0;
+  font-size: .86rem;
+  line-height: 1.45;
+  color: var(--muted, #667788);
+}
+.hd-rate-bar__reset {
+  height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: #eef3f8;
+  color: var(--text);
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hd-rate-bar__reset:hover { background: #e2ebf3; }
 .hd-room-list {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+.hd-room__price.is-matched .hd-room__price-value {
+  color: var(--muk-blue);
+}
+.hd-room__price.is-unavailable .hd-room__price-value {
+  color: #9a3412;
+  font-size: .95rem;
+}
+.hd-room__price.is-unavailable .hd-room__price-label {
+  color: #c2410c;
 }
 .hd-room {
   display: grid;
@@ -436,8 +502,8 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 8px;
-  min-width: 132px;
+  gap: 10px;
+  min-width: 148px;
 }
 .hd-room__btn {
   display: inline-flex;
@@ -459,10 +525,111 @@
   filter: brightness(1.05);
   color: #fff;
 }
-.hd-room__price {
-  font-size: .84rem;
+.hd-room__btn--ghost {
+  background: #fff;
+  color: var(--ocean-deep);
+  border: 1.5px solid var(--border);
+  box-shadow: none;
+}
+.hd-room__btn--ghost:hover {
+  background: var(--bg-soft);
+  color: var(--ocean-deep);
+  filter: none;
+}
+
+/* Booking channels */
+.hd-book {
+  margin: 0 0 20px;
+  padding: 18px 18px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f7fbfe 0%, #fff 72%);
+  box-shadow: 0 10px 28px rgba(16, 42, 67, .06);
+  scroll-margin-top: 88px;
+}
+.hd-book__head { margin-bottom: 12px; }
+.hd-book__title {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
   font-weight: 800;
-  color: var(--muk-blue);
+  color: var(--ocean-deep);
+}
+.hd-book__sub {
+  margin: 0;
+  font-size: .86rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.hd-book__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hd-book__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: .84rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: transform .2s ease, filter .2s ease, background .2s ease;
+}
+.hd-book__btn:hover { transform: translateY(-1px); filter: brightness(1.04); }
+.hd-book__btn--agent {
+  background: var(--ocean);
+  color: #fff;
+}
+.hd-book__btn--line {
+  background: #06c755;
+  color: #fff;
+}
+.hd-book__btn--agoda {
+  background: #fff;
+  color: #e21e4a;
+  border-color: rgba(226, 30, 74, .35);
+}
+.hd-book__btn--booking {
+  background: #fff;
+  color: #003580;
+  border-color: rgba(0, 53, 128, .28);
+}
+.hd-book__btn--trip {
+  background: #fff;
+  color: #287dfa;
+  border-color: rgba(40, 125, 250, .3);
+}
+.hd-book__btn--phone {
+  background: var(--koh-red);
+  color: #fff;
+}
+.hd-room__price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+  line-height: 1.15;
+}
+.hd-room__price-label {
+  font-size: .72rem;
+  font-weight: 600;
+  color: #67788a;
+}
+.hd-room__price-value {
+  font-family: var(--font, inherit);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--koh-red);
+  letter-spacing: -.02em;
+}
+.hd-room__price-unit {
+  font-size: .72rem;
+  font-weight: 600;
+  color: #67788a;
 }
 
 /* Rating snippets */

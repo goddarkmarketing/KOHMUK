@@ -34,6 +34,9 @@ function site_settings_defaults(): array
         'boat_contact_1' => 'คุณอเล็กซ์ 091-0401234',
         'hero_caption' => 'เกาะมุกต์ / วิถีชุมชนที่สวยงาม',
         'footer_tagline' => 'เกาะมุกต์ วิถีชุมชนที่มีความสุข',
+        'facebook_url' => '',
+        'youtube_url' => '',
+        'tiktok_url' => '',
         'updated_at' => null,
     ];
 }
@@ -84,6 +87,9 @@ function site_settings_public(): array
         'boat_contact_1' => (string) $s['boat_contact_1'],
         'hero_caption' => (string) $s['hero_caption'],
         'footer_tagline' => (string) $s['footer_tagline'],
+        'facebook_url' => (string) ($s['facebook_url'] ?? ''),
+        'youtube_url' => (string) ($s['youtube_url'] ?? ''),
+        'tiktok_url' => (string) ($s['tiktok_url'] ?? ''),
         'line_url' => site_settings_line_url((string) $s['contact_line']),
     ];
 }
@@ -105,6 +111,7 @@ function site_settings_save(array $input): array
         'bank_info', 'contact_line', 'contact_email', 'office_address', 'office_hours',
         'pier_name', 'map_lat', 'map_lng', 'tour_contact_1', 'tour_contact_2',
         'boat_contact_1', 'hero_caption', 'footer_tagline',
+        'facebook_url', 'youtube_url', 'tiktok_url',
     ];
 
     foreach ($intKeys as $key) {

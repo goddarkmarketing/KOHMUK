@@ -9,6 +9,7 @@ require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/site_content_helpers.php';
 
 try {
+    site_content_ensure_table();
     $payload = ['ok' => true];
     foreach (site_content_export_section_keys() as $section) {
         $rows = site_content_list($section, true);

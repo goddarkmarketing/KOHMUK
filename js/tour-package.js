@@ -294,13 +294,15 @@
     const idx = Number(item._index) || 0;
     const base = TOUR_PACKAGE_DETAILS[idx] || TOUR_PACKAGE_DETAILS[0];
     const adultPrice = parsePrice(item.price) || parsePrice(item.now);
+    const code = item.code || item.id || base.packageCode || `KL-T${String(idx + 1).padStart(3, '0')}`;
     return {
       ...base,
       name: item.title || '',
       route: item.subtitle || base.galleryCaption || '',
+      duration: item.duration || base.duration,
       basePrice: adultPrice,
-      childPrice: base.childPrice || Math.round(adultPrice * 0.74),
-      packageCode: base.packageCode || `KL-T${String(idx + 1).padStart(3, '0')}`,
+      childPrice: base.childPrice || Math.max(0, Math.round(adultPrice * 0.74)),
+      packageCode: String(code).toUpperCase(),
     };
   }
 
@@ -347,8 +349,8 @@
   function buildTourPackageHtml(item) {
     const pkg = getTourDetail(item);
     const gallery = getGallery(item);
-    const caption = pkg.galleryCaption || pkg.route || item.subtitle || item.title;
-    const code = `รหัส ${pkg.packageCode}`;
+    const caption = pkg.route || item.subtitle || pkg.galleryCaption || item.title;
+    const code = `รหัส #${pkg.packageCode}`;
     const topRow = gallery.slice(0, 3).map((src) => `<div class="pkg-gallery-cell"><img src="${esc(src)}" alt="" loading="lazy" decoding="async"></div>`).join('');
     const botRow = gallery.slice(3, 6).map((src) => `<div class="pkg-gallery-cell"><img src="${esc(src)}" alt="" loading="lazy" decoding="async"></div>`).join('');
     const inclusions = (pkg.inclusions && pkg.inclusions.length) ? pkg.inclusions : DEFAULT_INCLUSIONS;
@@ -365,7 +367,7 @@
     return `
       <div class="pkg-detail">
         <div class="container">
-          <a href="${siteUrl('index.html#tours')}" class="pkg-back">
+          <a href="${siteUrl('programs.html')}" class="pkg-back">
             ${lucide('arrow-left', 'icon pkg-back__icon')}
             กลับสู่โปรแกรมทั้งหมด
           </a>

@@ -125,6 +125,23 @@ admin_header('ตั้งค่าระบบ', 'settings', 'ค่าสม�
       <input type="text" name="footer_tagline" value="<?= e((string) $settings['footer_tagline']) ?>" />
     </label>
 
+    <hr class="admin-divider" />
+    <h3 class="admin-panel__subtitle">โซเชียลมีเดีย (เฮดเดอร์ / ฟุตเตอร์)</h3>
+    <div class="admin-form__grid">
+      <label class="admin-field">
+        <span>Facebook URL</span>
+        <input type="url" name="facebook_url" value="<?= e((string) ($settings['facebook_url'] ?? '')) ?>" placeholder="https://facebook.com/..." />
+      </label>
+      <label class="admin-field">
+        <span>YouTube URL</span>
+        <input type="url" name="youtube_url" value="<?= e((string) ($settings['youtube_url'] ?? '')) ?>" placeholder="https://youtube.com/..." />
+      </label>
+      <label class="admin-field">
+        <span>TikTok URL</span>
+        <input type="url" name="tiktok_url" value="<?= e((string) ($settings['tiktok_url'] ?? '')) ?>" placeholder="https://tiktok.com/..." />
+      </label>
+    </div>
+
     <div class="admin-action-bar">
       <button type="submit" class="btn btn--green">บันทึกการตั้งค่า</button>
       <a class="btn btn--ghost-dark" href="../contact.html" target="_blank" rel="noopener">ดูหน้าติดต่อ</a>

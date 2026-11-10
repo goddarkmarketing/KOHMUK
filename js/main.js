@@ -254,6 +254,10 @@ const IMG = {
     upload('20260602-181649-b834b3a1.png'),
     upload('20260602-181740-ef2b0dd3.png'),
     px(14573822, W.card),
+    px(1647064, W.card),
+    px(2486168, W.card),
+    px(4171737, W.card),
+    px(15763636, W.card),
   ],
   hotelGalleries: [
     /* มุกต์ บีช รีสอร์ท — Muk Beach Resort */
@@ -299,6 +303,50 @@ const IMG = {
       bk(504447541, '62699814ed8c71e6ff6ca8dcb2cf90d655fdb84b7184b7cd42e89b84f2625a28'),
       bk(610031610, '7c4416bdf73a25bd7ca77943ef93b71741ec0da3b067a2869ea4b1094b38f6aa'),
       bk(147831008, 'b92f2e81561efedfaeca6f4da991960f0a1367923f7c98fd46a93348c72023b5'),
+    ],
+    /* โคโคนัท บีช รีสอร์ท */
+    [
+      bk(183281163, '8ff669340e16b196741aa1cdf1c3aeeec9f08506b2d8a23a265fbd2f57924c63'),
+      bk(687099515, '687e7c05a5acf389b2c3d9346ae952488c4acf670bab05dfd74f079cdb815dc4'),
+      bk(687093925, 'b05b56608b26f26bd2c06b62ac8012edfecc3e669e247cb0bd292013aeb621f5'),
+      bk(504446337, '2dee360f49ba68da5ccac4f38bfd0c8baf32718768516fa34d7ec0b8f0e8d6d5'),
+      bk(172989173, '705e1292e78a91f075c9cedbf45d78d8127ccff352a1c5aa64f04bbd998edd34'),
+      bk(406488113, 'b0fdaf8a8cf3b5694b7e3eae7e83f3a0302f1f88db9ea3d0bc4858800bfad850'),
+      bk(147831008, 'b92f2e81561efedfaeca6f4da991960f0a1367923f7c98fd46a93348c72023b5'),
+      bk(88450611, '7631eea4dccbd1e15b0906763557af616dc16bb418dc13efd7e877ef4db713fd'),
+    ],
+    /* สวนมะพร้าว โฮมสเตย์ */
+    [
+      bk(340339942, 'a787628d959e24189f4f6a89a339279f736b227151ae6685526610fc1301f778'),
+      bk(803846458, '3fc8cdf6b10438d5035b691fe91f0ed3031d28b440f7c7c8ab06ff2e38812491'),
+      bk(605198512, '872767ffd0efbbc048cba4a8bc744a4164aea080979afad48e224bfd12bc9de6'),
+      bk(340345494, '0347545629b386c98d00ca938e68f30b2d299f5d013b1addcbd15381f039fd20'),
+      bk(605198631, '23f7a411b77512c5edcbfd2cf15e1d3d51878ecbb74d2ba8ca8a5747b13563ab'),
+      bk(663547724, '06825dc608e00d80302848f2db86bc5826b9a880100ab946b240c63a0a4f0834'),
+      bk(442216842, '6c53a223d175ef70d9bb435f2b7280fd7e028273bbae08b804db265542cbf49c'),
+      bk(605201302, 'f6930af39dfb689c0795309f61bc278c38a87eb4cfd1dd37a852b35bbc0ce189'),
+    ],
+    /* มุกต์ วิว บังกะโล */
+    [
+      bk(590691497, 'fdbad430de69f119962d786d52514a51b9f647a5293294d7a167155a56ab405d'),
+      bk(590917483, '54c3973ea56819e8d9aaf3c75139ed0dc85c8230f1e66925d3c46c60e342adf2'),
+      bk(590694961, 'b8bed2c764c20b83128ffca7065f9a32c1c7ef2544e9e859b36f4d72aa66bb5a'),
+      bk(590692579, '275a2128449e6f798134895bae0d3cb4cb955217e6dee7cf41a48c0b1f97d104'),
+      bk(590690962, '8e1deba38251723c12348ffa8487fe64104ac07634a7d750508340dd6ec79311'),
+      bk(590693501, '4f9195bbc8ccdda0b4186b0f075578dbb3e91683c617c065c9ddeed66585a544'),
+      bk(271241141, '7d35cab9fb2ec3079879a8e3f3bc5abfa82f4f02fe789d38cedfff6d2fb3a985'),
+      bk(590694293, '8dbd35fe9f32f2479833945b77c81ee020d388a1cfd1cfdbf17f0f6c9c816ccf'),
+    ],
+    /* อันดามัน บีช รีสอร์ท มุกต์ */
+    [
+      bk(224179908, '2be9177a28d6650e1fd15ffb18cdc6b383ec9c7965735c1cb44c9ffdd6ba2c68'),
+      bk(148166215, '9687dacf591103065da73e65b45ad2ec49cb86d7495b7e06bb565281643f9638'),
+      bk(504447541, '62699814ed8c71e6ff6ca8dcb2cf90d655fdb84b7184b7cd42e89b84f2625a28'),
+      bk(610031610, '7c4416bdf73a25bd7ca77943ef93b71741ec0da3b067a2869ea4b1094b38f6aa'),
+      bk(687097759, 'f0482a38ee6653d2cea9ba05dbf950b9d1230d5f475b1b48df27588464c22139'),
+      bk(687097881, 'cac714d88cb2e6c79ff03cdd95660413e82f72ccf878baff6e87a257b72d2cc2'),
+      bk(406488007, 'd44cba77fe5461afac2c6ea40b4dcee6f35600bf854042ad4c109dd3335cf423'),
+      bk(687097758, 'c4e254b5b506002a9a5c1ee994ccd7950b862d41bea46fa1d6002b99b90ad64c'),
     ],
   ],
   miniSlides: [
@@ -410,6 +458,77 @@ function preloadImage(url) {
     });
   })();
 
+  /* ---------- HASH SECTION NAV (sticky header offset) ---------- */
+  function headerNavOffset() {
+    return ($('#nav')?.offsetHeight || 0) + 10;
+  }
+
+  function scrollToSectionId(id, behavior = 'smooth') {
+    const el = document.getElementById(id);
+    if (!el) return false;
+    const top = el.getBoundingClientRect().top + window.pageYOffset - headerNavOffset();
+    window.scrollTo({ top: Math.max(0, top), behavior });
+    return true;
+  }
+
+  function samePageAsLink(anchor) {
+    try {
+      const url = new URL(anchor.href, location.href);
+      const here = location.pathname.replace(/\/$/, '') || '/';
+      const there = url.pathname.replace(/\/$/, '') || '/';
+      if (here === there) return true;
+      const hereIndex = /(?:^|\/)index\.html$/.test(here) || /\/$/.test(location.pathname);
+      const thereIndex = /(?:^|\/)index\.html$/.test(there);
+      return hereIndex && thereIndex;
+    } catch {
+      return false;
+    }
+  }
+
+  function applyLocationHash(behavior = 'auto') {
+    const id = (location.hash || '').replace(/^#/, '');
+    if (!id) return;
+    scrollToSectionId(id, behavior);
+  }
+
+  (function initHashNav() {
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href]');
+      if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      if (a.target && a.target !== '_self') return;
+
+      const raw = a.getAttribute('href') || '';
+      let id = '';
+      if (raw.startsWith('#') && raw.length > 1 && !raw.startsWith('#/')) {
+        id = raw.slice(1);
+      } else if (raw.includes('#')) {
+        try {
+          id = new URL(a.href, location.href).hash.replace(/^#/, '');
+        } catch {
+          id = '';
+        }
+        if (!id || !samePageAsLink(a)) return;
+      } else {
+        return;
+      }
+
+      if (!document.getElementById(id)) return;
+      e.preventDefault();
+      history.pushState(null, '', `#${id}`);
+      scrollToSectionId(id, 'smooth');
+      $('#nav')?.classList.remove('is-open');
+      $('#navMenu')?.classList.remove('is-open');
+      document.body.classList.remove('nav-open');
+    });
+
+    window.addEventListener('hashchange', () => applyLocationHash('smooth'));
+    window.addEventListener('load', () => {
+      applyLocationHash('auto');
+      setTimeout(() => applyLocationHash('auto'), 250);
+      setTimeout(() => applyLocationHash('auto'), 900);
+    });
+  })();
+
   /* ---------- TO TOP ---------- */
   (function toTop() {
     const btn = $('#toTop');
@@ -467,28 +586,232 @@ function preloadImage(url) {
     { t: 'พักโฮมสเตย์ริมทะเล สัมผัสชีวิตชาวเล', tag: 'ที่พัก', m: 'เที่ยวเกาะ · 29 พ.ค. 2026 · 2,190 อ่าน' },
   ];
 
-  const tours = [
-    { t: 'โปรแกรม 4 เกาะ ทะเลตรัง', route: 'เกาะมุก → ถ้ำมรกต → เกาะกระดาน → ...', badge: 'ขายดี', badgeType: 'left', rate: '4.9', count: '3.2พัน', old: '4,200', now: '3,500' },
-    { t: 'โปรแกรมเกาะกระดาน ดำน้ำดูปะการัง', route: 'เกาะกระดาน → จุดดำน้ำ → ชมพระอาทิตย์', badge: 'ประหยัด 18%', badgeType: 'sale', rate: '4.8', count: '1.8พัน', old: '5,500', now: '4,500' },
-    { t: 'โปรแกรมดำน้ำลึกเกาะมุกต์', route: 'เกาะมุกต์ → เกาะม้า → เกาะแหวน', badge: 'ประหยัด 15%', badgeType: 'sale', rate: '4.9', count: '1.4พัน', old: '6,500', now: '5,500' },
-    { t: 'โปรแกรมเกาะมุก / ถ้ำมรกต', route: 'เกาะมุก → ถ้ำมรกต → จุดดำน้ำ', badge: 'ไฮไลต์', badgeType: 'right', rate: '4.9', count: '2.5พัน', old: '3,800', now: '3,200' },
-    { t: 'โปรแกรมชมพะยูนเกาะมุกต์', route: 'แหลมจุโหย → หญ้าทะเล → ดูพะยูน', badge: 'ขายดี', badgeType: 'left', rate: '5.0', count: '980', old: '4,500', now: '3,900' },
-    { t: 'โปรแกรมตกหมึกยามค่ำคืน', route: 'ท่าเรือบ้านพร้าว → จุดตกหมึก', badge: 'ประหยัด 20%', badgeType: 'sale', rate: '4.7', count: '640', old: '2,500', now: '1,990' },
-    { t: 'โปรแกรมล่องเรือชมป่าชายเลน', route: 'คลองมุกต์ → ป่าโกงกาง → ชมนก', badge: 'ธรรมชาติ', badgeType: 'right', rate: '4.8', count: '410', old: '1,800', now: '1,500' },
-    { t: 'โปรแกรมเหมาลำส่วนตัว 1 วัน', route: 'จัดเส้นทางได้เอง → เรือส่วนตัว', badge: 'พรีเมียม', badgeType: 'left', rate: '5.0', count: '255', old: '8,000', now: '6,900' },
+  const DEAL_STAR_SVG = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>';
+  const DEAL_STARS_HTML = `<div class="deal-stars" aria-label="5 ดาว">${DEAL_STAR_SVG.repeat(5)}</div>`;
+
+  let tourDealsCache = null;
+  let tourCategoriesCache = null;
+
+  const TOUR_DEALS_FALLBACK = [
+    { id: 'dl001', code: 'DL001', title: '4 เกาะทะเลตรัง : เรือหางยาว', subtitle: 'ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก', price: '650', rating: '4.9', review_count: '4.8พัน', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260612-141642-be55380f.png', category: 'daytrip' },
+    { id: 'dt001', code: 'DT001', title: '4 เกาะทะเลตรัง : เรือทัวร์', subtitle: 'ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก', price: '950', rating: '4.9', review_count: '4.8พัน', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260612-143741-9af064af.png', category: 'daytrip' },
+    { id: 'ds001', code: 'DS001', title: '4 เกาะทะเลตรัง : สปีดโบ๊ท', subtitle: 'ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก', price: '1350', rating: '4.9', review_count: '4.8พัน', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2024/10/1.jpg', category: 'daytrip' },
+    { id: 'ds002', code: 'DS002', title: 'เกาะรอก เกาะม้า : สปีดโบ๊ท', subtitle: 'เกาะรอกนอก เกาะรอกใน เกาะม้า', price: '1650', rating: '4.9', review_count: '4.8พัน', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2024/10/2.jpg', category: 'daytrip' },
+    { id: 'ds006', code: 'DS006', title: 'เกาะเหลาเหลียง เกาะกระดาน ถ้ำมรกต : สปีดโบ๊ท', subtitle: 'เกาะเหลาเหลียง เกาะกระดาน ถ้ำมรกต', price: '2250', rating: '4.9', review_count: '500', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2025/08/Untitled-design.png', category: 'daytrip' },
+    { id: 'dl003', code: 'DL003', title: 'เจาะลึกเกาะมุกต์ : เรือหางยาว', subtitle: 'เจาะลึกเกาะมุกต์', price: '600', rating: '4.9', review_count: '4.8พัน', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%A1%E0%B8%A3%E0%B8%81%E0%B8%95-1.jpg', category: 'daytrip' },
+    { id: 'dl004', code: 'DL004', title: 'เจาะลึกเกาะไหง : เรือหางยาว', subtitle: 'เจาะลึกเกาะไหง', price: '600', rating: '4.9', review_count: '500', duration: 'ประมาณ 8 ชั่วโมง', image: 'https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2024/10/Untitled-design-2-1.png', category: 'daytrip' },
+    { id: 'dl005', code: 'DL005', title: 'เกาะเหลาเหลียง เกาะตะเกียง : เรือหางยาว', subtitle: 'เกาะเหลาเหลียง เกาะตะเกียง', price: '1350', rating: '4.8', review_count: '4.8 พัน', duration: 'ประมาณ 7 ชั่วโมง', image: 'https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260701-195336-da9e6334.png', category: 'daytrip' },
   ];
 
-  const boats = Array.from({ length: 4 }, (_, k) => ({
-    t: 'จองตั๋วเรือไปเกาะมุกต์ ตกหมึก',
-    desc: 'จองตั๋วเรือไปเกาะมุกต์ ตกหมึก น่าเที่ยว เรือออกทุกชั่วโมง บริการรับ-ส่งถึงท่าเรือ',
-    price: '1,800',
-  }));
+  const TOUR_CATEGORY_META = {
+    daytrip: { eyebrow: 'One-day trips' },
+    overnight: { eyebrow: '2 Days 1 Night' },
+    packages3d2n: { eyebrow: '3 Days 2 Nights' },
+    packages4d3n: { eyebrow: '4 Days 3 Nights' },
+  };
+
+  const TOUR_CATEGORIES_FALLBACK = [
+    {
+      id: 'daytrip',
+      label: 'ไปเช้าเย็นกลับ',
+      title: 'แพ็กเกจไปเช้า เย็นกลับ',
+      subtitle: 'ไปเช้าเย็นกลับ ทะเลตรัง 4 เกาะ เกาะเหลาเหลียง เกาะมุก เกาะไหง และเกาะรอก — เริ่มต้น 600 บาท ครบเรือ ไกด์ อาหาร และประกัน',
+      packages: TOUR_DEALS_FALLBACK,
+    },
+  ];
+
+  function formatDealPrice(value) {
+    const n = Number(String(value ?? '').replace(/[^\d.]/g, ''));
+    if (!Number.isFinite(n)) return String(value || '');
+    return new Intl.NumberFormat('th-TH').format(n);
+  }
+
+  function dealCardHtml(item) {
+    const price = formatDealPrice(item.price);
+    const href = articleUrl('tour', item.id || item.code, item.title);
+    const cover = item.image || item._image || IMG.tours[0];
+    const code = item.code || String(item.id || '').toUpperCase();
+    return `
+    <a class="deal-card reveal" href="${escHtml(href)}">
+      <div class="deal-media">
+        <img src="${escHtml(cover)}" alt="${escHtml(item.title)}" loading="lazy" decoding="async">
+        <span class="deal-badge-tl">รหัส #${escHtml(code)}</span>
+        <span class="deal-badge-tr is-info">${escHtml(price)} ฿</span>
+      </div>
+      <div class="deal-body">
+        <h3>${escHtml(item.title)}</h3>
+        ${item.subtitle ? `<p class="deal-sub">${escHtml(item.subtitle)}</p>` : ''}
+        ${DEAL_STARS_HTML}
+        <div class="deal-rate"><strong>${escHtml(item.rating || '4.9')}</strong>/5 <span class="dot"></span> <span>${escHtml(item.review_count || '0')} รีวิว</span></div>
+        <div class="deal-price">
+          <small>เริ่มต้น · ${escHtml(item.duration || 'ประมาณ 8 ชั่วโมง')}</small>
+          <strong>THB ${escHtml(price)}</strong>
+        </div>
+      </div>
+    </a>`;
+  }
+
+  function normalizeTourPackageData(data) {
+    if (data && Array.isArray(data.categories) && data.categories.length) {
+      const categories = data.categories.map((cat) => ({
+        id: cat.id,
+        label: cat.label || cat.title || cat.id,
+        title: cat.title || cat.label || cat.id,
+        subtitle: cat.subtitle || '',
+        packages: (cat.packages || []).map((p) => ({ ...p, category: p.category || cat.id })),
+      }));
+      const packages = categories.flatMap((cat) => cat.packages);
+      return { categories, packages };
+    }
+    if (Array.isArray(data) && data.length) {
+      const packages = data.map((p) => ({ ...p, category: p.category || 'daytrip' }));
+      return {
+        categories: [{
+          id: 'daytrip',
+          label: 'ไปเช้าเย็นกลับ',
+          title: 'แพ็กเกจไปเช้า เย็นกลับ',
+          subtitle: TOUR_CATEGORIES_FALLBACK[0].subtitle,
+          packages,
+        }],
+        packages,
+      };
+    }
+    return {
+      categories: TOUR_CATEGORIES_FALLBACK,
+      packages: TOUR_DEALS_FALLBACK,
+    };
+  }
+
+  function getDaytripDeals(items) {
+    const fromCat = (tourCategoriesCache || []).find((c) => c.id === 'daytrip');
+    if (fromCat?.packages?.length) return fromCat.packages;
+    const list = Array.isArray(items) ? items : [];
+    const day = list.filter((p) => !p.category || p.category === 'daytrip');
+    return day.length ? day : list;
+  }
+
+  async function loadTourDeals() {
+    if (tourDealsCache) return tourDealsCache;
+    try {
+      const res = await fetch(siteUrl('data/tour-packages.json'));
+      if (res.ok) {
+        const data = await res.json();
+        const normalized = normalizeTourPackageData(data);
+        if (normalized.packages.length) {
+          tourCategoriesCache = normalized.categories;
+          tourDealsCache = normalized.packages;
+          return tourDealsCache;
+        }
+      }
+    } catch (_) {
+      /* use fallback */
+    }
+    const normalized = normalizeTourPackageData(null);
+    tourCategoriesCache = normalized.categories;
+    tourDealsCache = normalized.packages;
+    return tourDealsCache;
+  }
+
+  function renderTourDeals(items, selector = '#tourGrid', limit = null) {
+    const grid = $(selector);
+    if (!grid) return false;
+    const source = Array.isArray(items) && items.length ? items : TOUR_DEALS_FALLBACK;
+    const list = selector === '#tourGrid' ? getDaytripDeals(source) : source;
+    const sliced = limit ? list.slice(0, limit) : list;
+    registerContentSection('tour', tourDealsCache || source, (tourDealsCache || source).map((item) => item.image || IMG.tours[0]));
+    grid.innerHTML = sliced.map(dealCardHtml).join('');
+    initReveal(grid);
+    return true;
+  }
+
+  function setActiveCategoryNav(categoryId) {
+    const nav = $('#programsCategoryNav');
+    if (!nav) return;
+    $$('.programs-category-nav-link', nav).forEach((link) => {
+      link.classList.toggle('is-active', link.dataset.categoryJump === categoryId);
+    });
+  }
+
+  function jumpToProgramCategory(categoryId, { updateHash = true } = {}) {
+    if (!categoryId) return;
+    const target = document.getElementById(categoryId);
+    if (!target) return;
+    setActiveCategoryNav(categoryId);
+    if (updateHash && location.hash !== `#${categoryId}`) {
+      history.replaceState(null, '', `#${categoryId}`);
+    }
+    const top = target.getBoundingClientRect().top + window.scrollY - ((parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h'), 10) || 64) + 12);
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
+  function renderProgramsCatalog(categories) {
+    const nav = $('#programsCategoryNav');
+    const catalog = $('#programsCatalog');
+    if (!catalog) return false;
+    const cats = Array.isArray(categories) && categories.length ? categories : TOUR_CATEGORIES_FALLBACK;
+    const allPackages = cats.flatMap((c) => c.packages || []);
+    registerContentSection('tour', allPackages, allPackages.map((item) => item.image || IMG.tours[0]));
+
+    if (nav) {
+      nav.innerHTML = cats.map((cat) => `
+        <a class="programs-category-nav-link" href="#${escHtml(cat.id)}" data-category-jump="${escHtml(cat.id)}">
+          ${escHtml(cat.label)}
+          <span class="programs-category-nav-count">${(cat.packages || []).length}</span>
+        </a>`).join('');
+      nav.onclick = (e) => {
+        const link = e.target.closest('[data-category-jump]');
+        if (!link) return;
+        e.preventDefault();
+        jumpToProgramCategory(link.dataset.categoryJump);
+      };
+    }
+
+    catalog.innerHTML = cats.map((cat) => {
+      const eyebrow = TOUR_CATEGORY_META[cat.id]?.eyebrow || cat.label;
+      const cards = (cat.packages || []).map(dealCardHtml).join('');
+      return `
+      <section class="programs-category" id="${escHtml(cat.id)}" data-category="${escHtml(cat.id)}">
+        <div class="programs-category__head reveal">
+          <span class="programs-category__eyebrow">${escHtml(eyebrow)}</span>
+          <h2>${escHtml(cat.title)}</h2>
+          ${cat.subtitle ? `<p class="lead">${escHtml(cat.subtitle)}</p>` : ''}
+        </div>
+        <div class="deals-grid grid-4 programs-category-grid">${cards}</div>
+      </section>`;
+    }).join('');
+
+    initReveal(catalog);
+    const hash = (location.hash || '').replace(/^#/, '');
+    const initial = cats.some((c) => c.id === hash) ? hash : cats[0]?.id;
+    if (initial) {
+      setActiveCategoryNav(initial);
+      if (hash && cats.some((c) => c.id === hash)) {
+        requestAnimationFrame(() => jumpToProgramCategory(hash, { updateHash: false }));
+      }
+    }
+    return true;
+  }
+
+  const boats = [
+    { id: 'boat-01', t: 'เข้า-ออกเกาะมุกต์', desc: 'เหมาเรือหางยาวรับ-ส่งท่าเรือหาดยาว / ควนตุ้งกู — บ้านพร้าว เลือกเวลาได้', price: '800' },
+    { id: 'boat-02', t: 'ถ้ำมรกต + หาดลับ', desc: 'ล่องเรือจากเกาะมุกต์ ว่ายลอดถ้ำมรกต ชมหาดลับน้ำใสสีมรกต', price: '1,500' },
+    { id: 'boat-03', t: 'ทะเลตรัง 4 เกาะ', desc: 'ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก — เหมาลำส่วนตัวทั้งวัน', price: '2,700' },
+    { id: 'boat-04', t: 'เกาะมุกต์ → เกาะไหง', desc: 'ข้ามเกาะไปเกาะไหง พักผ่อนชายหาดขาว ดำน้ำตื้นหน้าหาด', price: '1,500' },
+    { id: 'boat-05', t: 'เกาะมุกต์ → เกาะกระดาน', desc: 'ไปเกาะกระดานชมหาดและปะการัง ส่งถึงชายหาดรีสอร์ท', price: '1,800' },
+    { id: 'boat-06', t: 'ดำน้ำตื้น / ดูปะการัง', desc: 'พาไปจุดดำน้ำรอบเกาะมุกต์ รวมอุปกรณ์และเสื้อชูชีพ', price: '1,800' },
+    { id: 'boat-07', t: 'ทริปตกหมึกกลางคืน', desc: 'ออกเรือยามค่ำ ตกหมึกกับลูกเรือท้องถิ่น เหมาะกลุ่มเพื่อนและครอบครัว', price: '2,000' },
+    { id: 'boat-08', t: 'เกาะเหลาเหลียง / เกาะรอก', desc: 'ทริปยาวไปเกาะเหลาเหลียงหรือเกาะรอก เหมาสปีดโบ๊ท / เรือหางยาว', price: '5,000' },
+  ];
 
   const hotels = [
     { t: 'มุกต์ บีช รีสอร์ท', loc: 'หาดบ้านพร้าว, เกาะมุกต์', stars: 4, am: ['Wi-Fi ฟรี', 'ติดทะเล', 'อาหารเช้า'], desc: 'ที่พักริมหาดบรรยากาศเงียบสงบ มองเห็นวิวทะเลอันดามัน เดินถึงชายหาดได้ทันที', price: '4,740' },
     { t: 'หลังเขา โฮมสเตย์ มุกต์', loc: 'บ้านบาตูปูเต๊ะ, เกาะมุกต์', stars: 4, am: ['Wi-Fi ฟรี', 'จักรยานฟรี', 'จุดชมวิว'], desc: 'โฮมสเตย์วิถีชุมชน สัมผัสชีวิตชาวเลแท้ ๆ พร้อมอาหารพื้นบ้านรสเด็ดทุกมื้อ', price: '1,290' },
     { t: 'ดูหยง ซีวิว บังกะโล', loc: 'แหลมจุโหย, เกาะมุกต์', stars: 5, am: ['Wi-Fi ฟรี', 'สระว่ายน้ำ', 'ติดทะเล'], desc: 'บังกะโลริมทะเลพร้อมระเบียงส่วนตัว ชมพระอาทิตย์ตกได้จากห้องพัก', price: '3,200' },
     { t: 'เลตรัง รีสอร์ท แอนด์ สปา', loc: 'หาดทุ่งหญ้าคา, เกาะมุกต์', stars: 5, am: ['สปา', 'สระว่ายน้ำ', 'อาหารเช้า'], desc: 'รีสอร์ทระดับพรีเมียม พร้อมสปาและสระว่ายน้ำ บริการครบครันเพื่อการพักผ่อน', price: '5,900' },
+    { t: 'โคโคนัท บีช รีสอร์ท', loc: 'หาดบ้านพร้าว, เกาะมุกต์', stars: 4, am: ['Wi-Fi ฟรี', 'ติดทะเล', 'ร้านอาหาร'], desc: 'รีสอร์ทร่มเงาต้นมะพร้าว ใกล้ชายหาด เหมาะพักผ่อนแบบสบาย ๆ', price: '3,850' },
+    { t: 'สวนมะพร้าว โฮมสเตย์', loc: 'บ้านพร้าว, เกาะมุกต์', stars: 3, am: ['Wi-Fi ฟรี', 'อาหารเช้า', 'ที่จอดรถ'], desc: 'โฮมสเตย์ในสวน เงียบสงบ ใกล้ชุมชนและสะดวกเดินทางไปท่าเรือ', price: '990' },
+    { t: 'มุกต์ วิว บังกะโล', loc: 'หาดตะโละ, เกาะมุกต์', stars: 4, am: ['Wi-Fi ฟรี', 'ระเบียงวิว', 'ใกล้ชายหาด'], desc: 'บังกะโลวิวทะเล ห้องโปร่งโล่ง นั่งชิลล์ริมระเบียงได้ทั้งวัน', price: '2,450' },
+    { t: 'อันดามัน บีช รีสอร์ท มุกต์', loc: 'หาดบ้านพร้าว, เกาะมุกต์', stars: 5, am: ['สระว่ายน้ำ', 'อาหารเช้า', 'ติดทะเล'], desc: 'รีสอร์ทวิวอันดามัน บริการครบ เหมาะครอบครัวและคู่รัก', price: '5,200' },
   ];
 
   const hotelGalleries = {};
@@ -504,21 +827,13 @@ function preloadImage(url) {
   function renderHotelGallery(id, urls, title) {
     const images = getHotelImages(urls, title);
     hotelGalleries[id] = images;
-
-    const thumbs = images.map((im, i) => {
-      const more = i === 7 ? ' hotel-card__thumb--more' : '';
-      const label = i === 7 ? '<span class="hotel-card__thumb-label">ดูทั้งหมด</span>' : '';
-      return `<div class="hotel-card__thumb${more}" aria-hidden="true">
-        <img src="${im.thumb}" alt="" loading="lazy" decoding="async">${label}
-      </div>`;
-    }).join('');
+    const cover = images[0]?.src || '';
 
     return `
-      <div class="hotel-card__gallery">
+      <div class="hotel-card__gallery hotel-card__gallery--single">
         <div class="hotel-card__hero">
-          <img src="${images[0].src}" alt="${escHtml(title)}" loading="lazy" decoding="async">
+          <img src="${escHtml(cover)}" alt="${escHtml(title)}" loading="lazy" decoding="async">
         </div>
-        <div class="hotel-card__thumbs">${thumbs}</div>
       </div>`;
   }
 
@@ -551,8 +866,18 @@ function preloadImage(url) {
 
   function enrichArticleItem(section, item, k, fallbackImgs) {
     const media = ARTICLE_MEDIA[section]?.[k % (ARTICLE_MEDIA[section]?.length || 1)];
-    const hero = media?.hero || item.image || fallbackImgs[k % fallbackImgs.length];
+    const hero = item.image || media?.hero || fallbackImgs[k % fallbackImgs.length];
     let gallery = item.gallery?.length >= 3 ? item.gallery : null;
+    if (!gallery && item.image) {
+      gallery = [
+        item.image,
+        media?.gallery?.[0] || fallbackImgs[(k + 1) % fallbackImgs.length],
+        media?.gallery?.[1] || fallbackImgs[(k + 2) % fallbackImgs.length],
+        media?.gallery?.[2] || fallbackImgs[(k + 3) % fallbackImgs.length],
+        media?.gallery?.[3] || fallbackImgs[(k + 4) % fallbackImgs.length],
+        media?.gallery?.[4] || fallbackImgs[(k + 5) % fallbackImgs.length],
+      ];
+    }
     if (!gallery && media?.gallery) gallery = media.gallery;
     if (!gallery || gallery.length < 3) {
       gallery = [
@@ -614,7 +939,11 @@ function preloadImage(url) {
   function getContentItem(section, id, title = '') {
     const list = contentRegistry[section];
     if (!list) return null;
-    return list.find((it) => it._key === String(id))
+    const needle = String(id || '').trim();
+    const needleLower = needle.toLowerCase();
+    return list.find((it) => it._key === needle)
+      || list.find((it) => String(it.id || '').toLowerCase() === needleLower)
+      || list.find((it) => String(it.code || '').toLowerCase() === needleLower)
       || (title ? list.find((it) => it.title === title) : null)
       || null;
   }
@@ -651,18 +980,18 @@ function preloadImage(url) {
   ];
 
   const POPULAR_TAGS = [
-    { label: 'เกาะมุกต์', hash: '#about' },
-    { label: 'ที่พักเกาะมุกต์', hash: '#hotels' },
-    { label: 'ที่พักริมทะเล', hash: '#hotels' },
-    { label: 'โฮมสเตย์', hash: '#hotels' },
-    { label: 'แพ็คเกจทัวร์', hash: '#tours' },
-    { label: 'ดูพะยูน', hash: '#about' },
-    { label: 'ดำน้ำ', hash: '#tours' },
-    { label: 'ร้านอาหาร', hash: '#restaurants' },
-    { label: 'อาหารทะเล', hash: '#restaurants' },
-    { label: 'ตั๋วเรือ', hash: '#boats' },
-    { label: 'ทะเลตรัง', hash: '#tours' },
-    { label: 'วิถีชุมชน', hash: '#about' },
+    { label: 'เกาะมุกต์', href: 'about.html' },
+    { label: 'ที่พักเกาะมุกต์', href: 'hotels.html' },
+    { label: 'ที่พักริมทะเล', href: 'hotels.html' },
+    { label: 'โฮมสเตย์', href: 'hotels.html' },
+    { label: 'แพ็คเกจทัวร์', href: 'programs.html' },
+    { label: 'ดูพะยูน', href: 'about.html' },
+    { label: 'ดำน้ำ', href: 'programs.html' },
+    { label: 'ร้านอาหาร', href: 'restaurants.html' },
+    { label: 'อาหารทะเล', href: 'restaurants.html' },
+    { label: 'ตั๋วเรือ', href: 'boats.html' },
+    { label: 'ทะเลตรัง', href: 'programs.html' },
+    { label: 'วิถีชุมชน', href: 'about.html' },
   ];
 
   function popularTagsHtml() {
@@ -670,9 +999,7 @@ function preloadImage(url) {
       <h3 class="popular-tags__title">แท็กยอดนิยม</h3>
       <div class="popular-tags__list">
         ${POPULAR_TAGS.map((tag) => {
-          const href = document.body.dataset.page === 'article'
-            ? siteUrl(`index.html${tag.hash}`)
-            : tag.hash;
+          const href = siteUrl(tag.href);
           return `<a class="popular-tags__tag" href="${escHtml(href)}">#${escHtml(tag.label)}</a>`;
         }).join('')}
       </div>
@@ -1500,29 +1827,7 @@ function preloadImage(url) {
           changed = true;
         }
 
-        if (data.tours?.length) {
-          const mapped = data.tours.map((item) => ({
-            id: `live-tour-${item.id}`,
-            title: item.title,
-            subtitle: item.location || item.author || '',
-            description: item.text || '',
-            badge: 'สมาชิก',
-            badge_type: 'green',
-            price: item.price || '',
-            image: item.cover || '',
-            source: 'member',
-            phone: item.phone || '',
-            line_id: item.line_id || '',
-            author: item.author || '',
-            location: item.location || '',
-            postId: item.id,
-          }));
-          const cms = contentRegistry.tour || [];
-          const liveTitles = new Set(mapped.map((h) => String(h.title || '').trim().toLowerCase()));
-          const cmsUnique = cms.filter((h) => !liveTitles.has(String(h.title || '').trim().toLowerCase()));
-          renderSiteTours([...mapped, ...cmsUnique], IMG.tours);
-          changed = true;
-        }
+        /* Member tour posts are not mixed into the deal-card package grid */
 
         if (changed) {
           initLucide();
@@ -1533,6 +1838,154 @@ function preloadImage(url) {
       }
     }
     return false;
+  }
+
+  function extractPhoneDisplay(text, fallback = '091-0401234') {
+    const m = String(text || '').match(/0\d{1,2}[- ]?\d{3}[- ]?\d{3,4}/);
+    return m ? m[0].replace(/\s+/g, '-') : fallback;
+  }
+
+  function lineChatUrl(lineId) {
+    const id = String(lineId || '@talaytrang').trim();
+    const clean = id.startsWith('@') ? id.slice(1) : id;
+    return `https://line.me/R/ti/p/@${encodeURIComponent(clean)}`;
+  }
+
+  function syncWelcomePopup(settings = {}) {
+    const el = $('#welcome-popup');
+    if (!el) return;
+
+    const phoneDisplay = extractPhoneDisplay(
+      settings.boat_contact_1 || settings.phone || el.dataset.phone,
+      el.dataset.phone || '091-0401234',
+    );
+    const phoneTel = phoneDisplay.replace(/[^\d+]/g, '');
+    const lineId = settings.contact_line || el.dataset.lineId || '@talaytrang';
+    const lineUrl = settings.line_url && settings.line_url !== '#'
+      ? settings.line_url
+      : lineChatUrl(lineId);
+    const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=112x112&data=${encodeURIComponent(lineUrl)}`;
+
+
+    el.dataset.phone = phoneDisplay;
+    el.dataset.lineId = lineId;
+
+    const call = $('.welcome-popup-call', el);
+    const callNum = $('.welcome-popup-call-num', el);
+    const line = $('.welcome-popup-line', el);
+    const lineIdEl = $('.welcome-popup-line-id', el);
+    const qr = $('.welcome-popup-qr img', el);
+
+    if (call) call.href = `tel:${phoneTel}`;
+    if (callNum) callNum.textContent = phoneDisplay;
+    if (line) line.href = lineUrl;
+    if (lineIdEl) lineIdEl.textContent = lineId;
+    if (qr) {
+      qr.src = qrSrc;
+      qr.alt = `QR Code ${lineId}`;
+    }
+  }
+
+  function initWelcomePopup() {
+    if (window.__KOHMUK_POPUP_DONE) return;
+    if (/\/admin(\/|$)/.test(location.pathname)) return;
+    try {
+      sessionStorage.removeItem('kohmuk-welcome-popup');
+    } catch (_) {
+      /* private mode */
+    }
+
+    const phoneDisplay = '091-0401234';
+    const phoneTel = '0910401234';
+    const lineId = '@talaytrang';
+    const lineUrl = lineChatUrl(lineId);
+    const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=112x112&data=${encodeURIComponent(lineUrl)}`;
+
+    document.getElementById('welcome-popup')?.remove();
+
+    const el = document.createElement('div');
+    el.className = 'welcome-popup';
+    el.id = 'welcome-popup';
+    el.dataset.phone = phoneDisplay;
+    el.dataset.lineId = lineId;
+    el.setAttribute('role', 'dialog');
+    el.setAttribute('aria-label', 'ติดต่อเรา');
+    el.innerHTML = `
+      <div class="welcome-popup-backdrop" aria-hidden="true"></div>
+      <button type="button" class="welcome-popup-fab" aria-label="เปิดติดต่อเรา" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+      </button>
+      <div class="welcome-popup-panel">
+        <div class="welcome-popup-head">
+          <span class="welcome-popup-label">ติดต่อเรา</span>
+          <button type="button" class="welcome-popup-close" aria-label="ปิด">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+          </button>
+        </div>
+        <div class="welcome-popup-body">
+          <a class="welcome-popup-call" href="tel:${phoneTel}">
+            <span class="welcome-popup-call-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+            </span>
+            <span class="welcome-popup-call-num">${escHtml(phoneDisplay)}</span>
+          </a>
+          <a class="welcome-popup-line" href="${escHtml(lineUrl)}" target="_blank" rel="noopener">
+            <span class="welcome-popup-line-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.36 10.62c0-3.78-3.79-6.85-8.45-6.85S2.46 6.84 2.46 10.62c0 3.39 3 6.23 7.06 6.77.28.06.65.18.74.42.08.21.05.55.03.77l-.12.72c-.04.21-.17.83.73.45.9-.38 4.84-2.85 6.61-4.88 1.22-1.34 1.85-2.7 1.85-4.25Zm-11.4 2.02H6.28c-.24 0-.43-.2-.43-.43V9.05c0-.24.2-.43.43-.43.24 0 .43.19.43.43v2.74h1.25c.24 0 .43.19.43.43 0 .23-.19.42-.43.42Zm1.69-.43c0 .23-.19.43-.43.43-.24 0-.43-.2-.43-.43V9.05c0-.24.19-.43.43-.43.24 0 .43.19.43.43v3.16Zm3.79 0c0 .18-.12.35-.3.41a.44.44 0 0 1-.13.02c-.14 0-.27-.07-.35-.18l-1.72-2.35v2.1c0 .23-.19.43-.43.43-.24 0-.43-.2-.43-.43V9.05c0-.18.12-.35.3-.41.05-.01.09-.02.13-.02.14 0 .27.07.35.17l1.72 2.35v-2.1c0-.24.19-.43.43-.43.24 0 .43.19.43.43v3.16Zm3.05-1.6h-1.25v.74h1.25c.23 0 .43.2.43.43 0 .23-.2.43-.43.43h-1.69c-.23 0-.42-.2-.42-.43V9.05c0-.23.19-.43.43-.43h1.69c.23 0 .43.19.43.43 0 .23-.2.43-.43.43h-1.25v.74h1.25c.23 0 .43.19.43.43 0 .23-.2.42-.44.42Z"></path></svg>
+            </span>
+            <span class="welcome-popup-line-text">
+              <span class="welcome-popup-line-title">แชท LINE</span>
+              <span class="welcome-popup-line-id">${escHtml(lineId)}</span>
+            </span>
+          </a>
+          <div class="welcome-popup-qr">
+            <p class="welcome-popup-qr-hint">สแกนเพิ่มเพื่อน</p>
+            <div class="welcome-popup-qr-frame">
+              <img src="${escHtml(qrSrc)}" width="100" height="100" alt="QR Code ${escHtml(lineId)}" loading="lazy" />
+            </div>
+          </div>
+          <div class="welcome-popup-hours-block">
+            <span>จันทร์ - เสาร์ 07:00-21:00 น.</span>
+            <span>อาทิตย์ 07:00-21:00 น.</span>
+          </div>
+        </div>
+      </div>`;
+
+    const fab = el.querySelector('.welcome-popup-fab');
+    const mqMobile = window.matchMedia('(max-width: 767px)');
+
+    const setExpanded = (open) => {
+      el.classList.toggle('is-expanded', open);
+      if (fab) fab.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    fab?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setExpanded(!el.classList.contains('is-expanded'));
+    });
+    el.querySelector('.welcome-popup-backdrop')?.addEventListener('click', () => setExpanded(false));
+    el.querySelector('.welcome-popup-close')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setExpanded(false);
+    });
+    document.addEventListener('click', (e) => {
+      if (!el.isConnected || !el.classList.contains('is-expanded')) return;
+      if (el.contains(e.target)) return;
+      setExpanded(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!el.isConnected) return;
+      if (e.key === 'Escape' && el.classList.contains('is-expanded')) {
+        setExpanded(false);
+      }
+    });
+
+    document.body.appendChild(el);
+    window.__KOHMUK_POPUP_DONE = true;
+    setTimeout(() => {
+      el.classList.add('is-visible');
+      if (!mqMobile.matches) setExpanded(true);
+    }, 700);
   }
 
   async function applySiteSettings() {
@@ -1566,6 +2019,17 @@ function preloadImage(url) {
         });
       }
 
+      [
+        ['facebook', s.facebook_url],
+        ['youtube', s.youtube_url],
+        ['tiktok', s.tiktok_url],
+      ].forEach(([key, url]) => {
+        if (!url || url === '#') return;
+        $$(`a[data-setting-href="${key}"]`).forEach((a) => {
+          a.href = url;
+        });
+      });
+
       if (s.map_lat && s.map_lng) {
         const map = $('#contactMap');
         if (map) {
@@ -1576,6 +2040,8 @@ function preloadImage(url) {
           a.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.map_lat)},${encodeURIComponent(s.map_lng)}`;
         });
       }
+
+      syncWelcomePopup(s);
     } catch (_) {
       /* ignore */
     }
@@ -1622,60 +2088,41 @@ function preloadImage(url) {
   }
 
   function renderSiteTours(items, fallbackImgs) {
-    const grid = $('#tourGrid');
-    if (!items?.length) {
-      if (grid) grid.innerHTML = '';
-      return true;
+    /* Homepage / programs use deal-card layout from tour-packages.json */
+    if ($('#programsCatalog')) {
+      return renderProgramsCatalog(tourCategoriesCache || TOUR_CATEGORIES_FALLBACK);
     }
-
+    if ($('#tourGrid')) {
+      return renderTourDeals(items?.length ? items : null, '#tourGrid', 8);
+    }
+    if (!items?.length) return true;
     registerContentSection('tour', items, fallbackImgs);
-    if (!grid) return true;
-
-    grid.innerHTML = (contentRegistry.tour || []).map((item, k) => {
-      const cover = item._image || item.image || fallbackImgs[k % fallbackImgs.length];
-      const badgeType = item.badge_type || 'right';
-      const badge = item.badge || 'แนะนำ';
-      const old = item.price_old || '';
-      const now = item.price || '';
-      return `
-    <article ${cardClickAttrs('tour', item, k, 'tour-card')}>
-      <div class="card__media">
-        <img src="${escHtml(cover)}" alt="${escHtml(item.title)}" loading="lazy" decoding="async">
-        ${badge ? `<span class="card__badge card__badge--${escHtml(badgeType)}">${escHtml(badge)}</span>` : ''}
-      </div>
-      <div class="card__body">
-        <h4 class="card__title">${escHtml(item.title)}</h4>
-        ${item.subtitle ? `<p class="card__route">${escHtml(item.subtitle)}</p>` : ''}
-        <div class="card__rating">${starStr(5)} <b>${escHtml(item.rating || '4.9')}</b></div>
-        ${now ? `<div class="card__price">${old ? `<span class="card__price-old">฿${escHtml(old)}</span>` : ''}<span class="card__price-new">฿${escHtml(now)}</span></div>` : ''}
-        <span class="btn btn--primary btn--sm card__cta">ดูรายละเอียด</span>
-      </div>
-    </article>`;
-    }).join('');
-
-    initReveal(grid);
-    window.lucide?.createIcons?.();
     return true;
   }
 
   function renderSiteBoats(items, fallbackImgs) {
     const grid = $('#boatGrid');
     if (!grid) return false;
-    if (!items?.length) { grid.innerHTML = ''; return true; }
+    const source = Array.isArray(items) && items.length
+      ? items
+      : boats.map((b) => ({ id: b.id, title: b.t, description: b.desc, price: b.price }));
+    if (!source.length) { grid.innerHTML = ''; return true; }
 
-    registerContentSection('boat', items, fallbackImgs);
+    registerContentSection('boat', source, fallbackImgs);
 
-    grid.innerHTML = items.map((item, k) => {
+    grid.innerHTML = source.map((item, k) => {
       const cover = item.image || fallbackImgs[k % fallbackImgs.length];
+      const prog = k + 1;
       return `
     <article ${cardClickAttrs('boat', item, k, 'boat-card')}>
       <div class="card__media">
         <img src="${escHtml(cover)}" alt="${escHtml(item.title)}" loading="lazy" decoding="async">
+        <span class="card__badge card__badge--left">โปรแกรม ${prog}</span>
       </div>
       <div class="card__body">
         <h4 class="card__title">${escHtml(item.title)}</h4>
         ${item.description ? `<p class="card__desc">${escHtml(item.description)}</p>` : ''}
-        ${item.price ? `<div class="card__price"><span class="card__price-new">ราคา ${escHtml(item.price)} บาท/ต่อลำ</span></div>` : ''}
+        ${item.price ? `<div class="card__price"><span class="card__price-new">เริ่มต้น ${escHtml(item.price)} บาท/ลำ</span></div>` : ''}
         ${cardHintHtml()}
       </div>
     </article>`;
@@ -1797,10 +2244,25 @@ function preloadImage(url) {
   function applySiteContent(data) {
     ingestSiteContent(data);
     renderSiteActivities(data.activity || [], IMG.activities);
-    renderSiteTours(data.tour || [], IMG.tours);
-    renderSiteBoats(data.boat || [], IMG.boats);
-    renderSiteHotels(data.hotel || [], IMG.hotelGalleries);
-    renderSiteHotelMini(data.hotel_mini || [], IMG.miniSlides);
+    /* Tour deals stay on dedicated package data; do not overwrite from CMS listings */
+    const boatItems = (data.boat?.length >= 8)
+      ? data.boat
+      : boats.map((b) => ({ id: b.id, title: b.t, description: b.desc, price: b.price }));
+    renderSiteBoats(boatItems, IMG.boats);
+    const hotelItems = (data.hotel?.length >= 8)
+      ? data.hotel
+      : hotels.map((h, k) => ({
+        id: k,
+        title: h.t,
+        location: h.loc,
+        stars: h.stars,
+        amenities: h.am,
+        description: h.desc,
+        price: h.price,
+        gallery: IMG.hotelGalleries[k],
+      }));
+    renderSiteHotels(hotelItems, IMG.hotelGalleries);
+    if ($('#hotelMiniTrack')) renderSiteHotelMini(data.hotel_mini || [], IMG.miniSlides);
     renderSiteRestaurants(data.restaurant || [], IMG.restaurants);
     initLucide();
   }
@@ -1823,19 +2285,8 @@ function preloadImage(url) {
       activities.map((a) => ({ title: a.t, tag: a.tag, subtitle: a.m })),
       IMG.activities,
     );
-    renderSiteTours(
-      tours.map((t) => ({
-        title: t.t,
-        subtitle: t.route,
-        badge: t.badge,
-        badge_type: t.badgeType,
-        rating: t.rate,
-        review_count: t.count,
-        price: t.now,
-        price_old: t.old,
-      })),
-      IMG.tours,
-    );
+    renderTourDeals(TOUR_DEALS_FALLBACK, '#tourGrid', 8);
+    if ($('#programsCatalog')) renderProgramsCatalog(TOUR_CATEGORIES_FALLBACK);
     renderSiteBoats(
       boats.map((b) => ({ title: b.t, description: b.desc, price: b.price })),
       IMG.boats,
@@ -1888,7 +2339,7 @@ function preloadImage(url) {
         const crumb = `<nav class="article-page__crumb">
           <a href="${siteUrl('index.html')}">หน้าแรก</a>
           <span>/</span>
-          <a href="${siteUrl('index.html#hotels')}">จองโรงแรม</a>
+          <a href="${siteUrl('hotels.html')}">จองโรงแรม</a>
           <span>/</span>
           <span>${escHtml(item.title)}</span>
         </nav>`;
@@ -1914,18 +2365,10 @@ function preloadImage(url) {
       return true;
     }
 
+    const tourDeals = await loadTourDeals();
     ingestSiteContent({
       activity: activities.map((a) => ({ title: a.t, tag: a.tag, subtitle: a.m })),
-      tour: tours.map((t) => ({
-        title: t.t,
-        subtitle: t.route,
-        badge: t.badge,
-        badge_type: t.badgeType,
-        rating: t.rate,
-        review_count: t.count,
-        price: t.now,
-        price_old: t.old,
-      })),
+      tour: tourDeals,
       boat: boats.map((b) => ({ title: b.t, description: b.desc, price: b.price })),
       hotel: hotels.map((h, k) => ({
         id: k,
@@ -1955,11 +2398,16 @@ function preloadImage(url) {
     }));
 
     if (paint()) {
-      loadSiteContent().then(() => loadLiveListings().then(() => paint()));
+      loadSiteContent().then(() => {
+        /* Keep deal packages as the tour source of truth for detail pages */
+        registerContentSection('tour', tourDeals, tourDeals.map((item) => item.image || IMG.tours[0]));
+        return loadLiveListings().then(() => paint());
+      });
       return;
     }
 
     await loadSiteContent();
+    registerContentSection('tour', tourDeals, tourDeals.map((item) => item.image || IMG.tours[0]));
     await loadLiveListings();
     if (paint()) return;
 
@@ -1981,10 +2429,15 @@ function preloadImage(url) {
     });
   } else {
     renderFallbackGrids();
-    loadSiteContent().then(() => loadLiveListings());
+    loadTourDeals().then((items) => {
+      if ($('#tourGrid')) renderTourDeals(items, '#tourGrid', 8);
+      if ($('#programsCatalog')) renderProgramsCatalog(tourCategoriesCache || TOUR_CATEGORIES_FALLBACK);
+    });
+    loadSiteContent().then(() => loadLiveListings()).then(() => applyLocationHash('auto'));
   }
 
   applySiteSettings();
+  initWelcomePopup();
 
   /* ---------- FILTER PILLS (activities / hotels) ---------- */
   (function initFilterPills() {
@@ -2046,6 +2499,60 @@ function preloadImage(url) {
     $('.mini-slider__arrow--next', slider)?.addEventListener('click', () => {
       scrollWholeCards(viewport, 1);
     });
+  })();
+
+  (function reviewSlider() {
+    const wrap = $('#reviewSlider');
+    const rail = $('#reviewGrid');
+    if (!wrap || !rail) return;
+
+    let timer = null;
+    const AUTO_MS = 4500;
+
+    function atEnd() {
+      return rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 8;
+    }
+
+    function slide(dir) {
+      if (dir > 0 && atEnd()) {
+        rail.scrollTo({ left: 0, behavior: 'smooth' });
+        return;
+      }
+      if (dir < 0 && rail.scrollLeft <= 8) {
+        rail.scrollTo({ left: rail.scrollWidth, behavior: 'smooth' });
+        return;
+      }
+      scrollWholeCards(rail, dir);
+    }
+
+    function stop() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    function start() {
+      stop();
+      if (rail.children.length <= 1) return;
+      timer = setInterval(() => slide(1), AUTO_MS);
+    }
+
+    $('.reviews-slider__arrow--prev', wrap)?.addEventListener('click', () => {
+      slide(-1);
+      start();
+    });
+    $('.reviews-slider__arrow--next', wrap)?.addEventListener('click', () => {
+      slide(1);
+      start();
+    });
+
+    rail.addEventListener('pointerenter', stop);
+    rail.addEventListener('pointerleave', start);
+    wrap.addEventListener('focusin', stop);
+    wrap.addEventListener('focusout', (e) => {
+      if (!wrap.contains(e.relatedTarget)) start();
+    });
+
+    start();
   })();
 
   /* ---------- HOTEL GALLERY LIGHTBOX (kept for markup; card clicks go to detail) ---------- */

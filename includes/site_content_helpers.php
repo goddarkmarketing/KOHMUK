@@ -131,6 +131,7 @@ function map_site_content_api_row(array $row): array
             $amenities = $decoded;
         }
     }
+    $roomRates = site_content_decode_room_rates($row['room_rates'] ?? null);
 
     return [
         'id' => (int) $row['id'],
@@ -148,6 +149,7 @@ function map_site_content_api_row(array $row): array
         'review_count' => $row['review_count'],
         'stars' => $row['stars'] !== null ? (int) $row['stars'] : null,
         'amenities' => $amenities,
+        'room_rates' => $roomRates,
         'gallery' => $gallery,
         'image' => $image,
     ];
@@ -213,6 +215,8 @@ function site_content_save_from_post(array $post, ?array $files = null): int
         $amenities = json_encode($items, JSON_UNESCAPED_UNICODE);
     }
 
+    $roomRates = site_content_parse_room_rates_text((string) ($post['room_rates'] ?? ''));
+
     $data = [
         'title' => $title,
         'subtitle' => trim((string) ($post['subtitle'] ?? '')) ?: null,
@@ -227,6 +231,7 @@ function site_content_save_from_post(array $post, ?array $files = null): int
         'review_count' => trim((string) ($post['review_count'] ?? '')) ?: null,
         'stars' => ($post['stars'] ?? '') !== '' ? (int) $post['stars'] : null,
         'amenities' => $amenities,
+        'room_rates' => $roomRates,
         'gallery_images' => $galleryImages,
         'image_path' => $imagePath,
         'sort_order' => (int) ($post['sort_order'] ?? ($existing['sort_order'] ?? site_content_next_sort($section))),
@@ -234,19 +239,19 @@ function site_content_save_from_post(array $post, ?array $files = null): int
     ];
 
     if ($id > 0) {
-        $stmt = db()->prepare('UPDATE site_content SET section=?, title=?, subtitle=?, tag=?, badge=?, badge_type=?, location=?, description=?, price=?, price_old=?, rating=?, review_count=?, stars=?, amenities=?, gallery_images=?, image_path=?, sort_order=?, is_active=? WHERE id=?');
+        $stmt = db()->prepare('UPDATE site_content SET section=?, title=?, subtitle=?, tag=?, badge=?, badge_type=?, location=?, description=?, price=?, price_old=?, rating=?, review_count=?, stars=?, amenities=?, room_rates=?, gallery_images=?, image_path=?, sort_order=?, is_active=? WHERE id=?');
         $stmt->execute([
             $section, $data['title'], $data['subtitle'], $data['tag'], $data['badge'], $data['badge_type'],
             $data['location'], $data['description'], $data['price'], $data['price_old'], $data['rating'],
-            $data['review_count'], $data['stars'], $data['amenities'], $data['gallery_images'], $data['image_path'],
+            $data['review_count'], $data['stars'], $data['amenities'], $data['room_rates'], $data['gallery_images'], $data['image_path'],
             $data['sort_order'], $data['is_active'], $id,
         ]);
     } else {
-        $stmt = db()->prepare('INSERT INTO site_content (section, title, subtitle, tag, badge, badge_type, location, description, price, price_old, rating, review_count, stars, amenities, gallery_images, image_path, sort_order, is_active) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+        $stmt = db()->prepare('INSERT INTO site_content (section, title, subtitle, tag, badge, badge_type, location, description, price, price_old, rating, review_count, stars, amenities, room_rates, gallery_images, image_path, sort_order, is_active) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
         $stmt->execute([
             $section, $data['title'], $data['subtitle'], $data['tag'], $data['badge'], $data['badge_type'],
             $data['location'], $data['description'], $data['price'], $data['price_old'], $data['rating'],
-            $data['review_count'], $data['stars'], $data['amenities'], $data['gallery_images'], $data['image_path'],
+            $data['review_count'], $data['stars'], $data['amenities'], $data['room_rates'], $data['gallery_images'], $data['image_path'],
             $data['sort_order'], $data['is_active'],
         ]);
         $id = (int) db()->lastInsertId();
@@ -286,6 +291,128 @@ function site_content_amenities_text(?array $row): string
     $decoded = json_decode((string) $row['amenities'], true);
 
     return is_array($decoded) ? implode("\n", $decoded) : '';
+}
+
+/** @return list<array{room:string,from:string,to:string,price:string,label?:string}> */
+function site_content_decode_room_rates(mixed $raw): array
+{
+    if ($raw === null || $raw === '') {
+        return [];
+    }
+    if (is_array($raw)) {
+        $decoded = $raw;
+    } else {
+        $decoded = json_decode((string) $raw, true);
+    }
+    if (!is_array($decoded)) {
+        return [];
+    }
+
+    $rows = [];
+    foreach ($decoded as $row) {
+        if (!is_array($row)) {
+            continue;
+        }
+        $from = trim((string) ($row['from'] ?? $row['start'] ?? ''));
+        $to = trim((string) ($row['to'] ?? $row['end'] ?? ''));
+        $price = preg_replace('/[^\d.]/', '', (string) ($row['price'] ?? '')) ?? '';
+        if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $from) || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $to) || $price === '') {
+            continue;
+        }
+        $item = [
+            'room' => trim((string) ($row['room'] ?? $row['name'] ?? '')),
+            'from' => $from,
+            'to' => $to,
+            'price' => $price,
+        ];
+        $label = trim((string) ($row['label'] ?? ''));
+        if ($label !== '') {
+            $item['label'] = $label;
+        }
+        $rows[] = $item;
+    }
+
+    return $rows;
+}
+
+function site_content_room_rates_text(?array $row): string
+{
+    $rows = site_content_decode_room_rates($row['room_rates'] ?? null);
+    if (!$rows) {
+        return '';
+    }
+
+    $lines = [];
+    foreach ($rows as $r) {
+        $line = trim(($r['room'] ?? '') . ' | ' . $r['from'] . ' | ' . $r['to'] . ' | ' . $r['price']);
+        if (!empty($r['label'])) {
+            $line .= ' | ' . $r['label'];
+        }
+        $lines[] = $line;
+    }
+
+    return implode("\n", $lines);
+}
+
+function site_content_parse_room_rates_text(string $raw): ?string
+{
+    $raw = trim($raw);
+    if ($raw === '') {
+        return null;
+    }
+
+    $rows = [];
+    foreach (preg_split('/\r\n|\r|\n/', $raw) ?: [] as $line) {
+        $line = trim((string) $line);
+        if ($line === '' || str_starts_with($line, '#')) {
+            continue;
+        }
+        $parts = array_values(array_filter(array_map('trim', explode('|', $line)), static fn ($p) => $p !== ''));
+        if (count($parts) < 3) {
+            continue;
+        }
+
+        $room = '';
+        $from = '';
+        $to = '';
+        $price = '';
+        $label = '';
+
+        if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $parts[0])) {
+            $from = $parts[0];
+            $to = $parts[1] ?? '';
+            $price = $parts[2] ?? '';
+            $label = $parts[3] ?? '';
+        } else {
+            $room = $parts[0];
+            $from = $parts[1] ?? '';
+            $to = $parts[2] ?? '';
+            $price = $parts[3] ?? '';
+            $label = $parts[4] ?? '';
+        }
+
+        $price = preg_replace('/[^\d.]/', '', (string) $price) ?? '';
+        if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $from) || !preg_match('/^\d{4}-\d{2}-\d{2}$/', $to) || $price === '') {
+            continue;
+        }
+
+        $item = [
+            'room' => $room,
+            'from' => $from,
+            'to' => $to,
+            'price' => $price,
+        ];
+        if ($label !== '') {
+            $item['label'] = $label;
+        }
+        $rows[] = $item;
+    }
+
+    if (!$rows) {
+        return null;
+    }
+
+    return json_encode($rows, JSON_UNESCAPED_UNICODE);
 }
 
 /** @return list<string> */
@@ -570,5 +697,20 @@ function site_content_ensure_table(): void
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
     ");
     site_content_ensure_hotel_mini_enum();
+    site_content_ensure_room_rates_column();
     seed_site_content_defaults();
+}
+
+function site_content_ensure_room_rates_column(): void
+{
+    try {
+        $stmt = db()->query("SHOW COLUMNS FROM site_content LIKE 'room_rates'");
+        $exists = $stmt && $stmt->fetch();
+        if ($exists) {
+            return;
+        }
+        db()->exec('ALTER TABLE site_content ADD COLUMN room_rates JSON DEFAULT NULL AFTER amenities');
+    } catch (Throwable $e) {
+        // Column may already exist on some hosts.
+    }
 }

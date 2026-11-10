@@ -171,18 +171,21 @@
       rooms: [
         {
           name: 'ห้องดีลักซ์วิวทะเล',
+          price: '4740',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 12,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'ห้องแฟมิลี่ 4 ท่าน',
+          price: '5480',
           bed: 'เตียงใหญ่ 1 เตียงและเตียงเดี่ยว 2 เตียง',
           photos: 9,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'ห้องสุพีเรียร์ติดหาด',
+          price: '6200',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 10,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
@@ -309,18 +312,21 @@
       rooms: [
         {
           name: 'ห้องมาตรฐานวิวเนินเขา',
+          price: '1290',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 8,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'ห้องครอบครัว',
+          price: '1590',
           bed: 'เตียงใหญ่ 1 เตียงและเตียงเดี่ยว 1 เตียง',
           photos: 6,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'ห้องมุมสวน',
+          price: '1890',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 7,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
@@ -448,18 +454,21 @@
       rooms: [
         {
           name: 'บังกะโลซีวิว',
+          price: '3200',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 14,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'บังกะโลพรีเมียมวิวทะเล',
+          price: '3800',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 11,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'บังกะโลครอบครัว',
+          price: '4500',
           bed: 'เตียงใหญ่ 1 เตียงและเตียงเดี่ยว 1 เตียง',
           photos: 9,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
@@ -588,18 +597,21 @@
       rooms: [
         {
           name: 'ห้องดีลักซ์สามคน',
+          price: '5900',
           bed: 'เตียงใหญ่ 1 เตียงและเตียงเดี่ยว 1 เตียง',
           photos: 13,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'ห้องสุพีเรียร์พรีเมียร์',
+          price: '6800',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 8,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
         },
         {
           name: 'ห้องสวีทวิวสวน',
+          price: '7900',
           bed: 'เตียงใหญ่ 1 เตียง',
           photos: 15,
           amenities: ['Wi-Fi ฟรี', 'ห้ามสูบบุหรี่', 'ห้องน้ำส่วนตัว', 'ตู้เย็น', 'ฝักบัวอาบน้ำ'],
@@ -659,12 +671,14 @@
       about: item.description || item.text || 'รายละเอียดเพิ่มเติมสอบถามผู้ประกอบการโดยตรง',
       faqs: [],
       rooms: [
-        {
+        ensureRoomRates({
           name: item.title || 'ห้องพัก / บริการ',
+          price: item.price || '',
           bed: item.price ? `ราคา ${item.price}` : 'สอบถามราคา',
           photos: (item.gallery || item._gallery || []).length || 1,
           amenities,
-        },
+          rates: normalizeRateRows(item.room_rates || item.roomRates || []),
+        }),
       ],
     };
   }
@@ -678,10 +692,13 @@
 
   function getDetail(item) {
     if (isMemberHotel(item)) {
-      return buildMemberHotelDetail(item);
+      const detail = buildMemberHotelDetail(item);
+      return applyCmsRoomRates(detail, item);
     }
     const idx = Number(item._index) || 0;
-    return HOTEL_DETAILS[idx % HOTEL_DETAILS.length];
+    const detail = JSON.parse(JSON.stringify(HOTEL_DETAILS[idx % HOTEL_DETAILS.length]));
+    detail.rooms = (detail.rooms || []).map(ensureRoomRates);
+    return applyCmsRoomRates(detail, item);
   }
 
   function getGallery(item) {
@@ -734,6 +751,234 @@
       .join('')}</ul>`;
   }
 
+  function formatRoomPrice(value) {
+    const raw = String(value ?? '').replace(/[^\d.]/g, '');
+    const n = Number(raw);
+    if (!Number.isFinite(n) || n <= 0) return String(value || '').trim();
+    return new Intl.NumberFormat('th-TH').format(n);
+  }
+
+  function toIsoDate(d) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  }
+
+  function formatThaiShortDate(iso) {
+    const m = String(iso || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!m) return String(iso || '');
+    const months = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+    return `${Number(m[3])} ${months[Number(m[2]) - 1]} ${Number(m[1]) + 543}`;
+  }
+
+  function defaultSeasonRates(basePrice) {
+    const base = Number(String(basePrice ?? '').replace(/[^\d.]/g, '')) || 0;
+    if (!base) return [];
+    const low = String(Math.max(100, Math.round((base * 0.82) / 10) * 10));
+    const high = String(base);
+    const peak = String(Math.round((base * 1.18) / 10) * 10);
+    return [
+      { from: '2026-05-01', to: '2026-10-31', price: low, label: 'โลว์ซีซัน' },
+      { from: '2026-11-01', to: '2027-03-31', price: high, label: 'ไฮซีซัน' },
+      { from: '2027-04-01', to: '2027-04-30', price: peak, label: 'ช่วงเทศกาล' },
+      { from: '2027-05-01', to: '2027-10-31', price: low, label: 'โลว์ซีซัน' },
+    ];
+  }
+
+  function normalizeRateRows(rows) {
+    if (!Array.isArray(rows)) return [];
+    return rows
+      .map((row) => {
+        const from = String(row?.from || row?.start || '').trim();
+        const to = String(row?.to || row?.end || '').trim();
+        const price = String(row?.price ?? '').replace(/[^\d.]/g, '');
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(from) || !/^\d{4}-\d{2}-\d{2}$/.test(to) || !price) {
+          return null;
+        }
+        return {
+          room: String(row?.room || row?.name || '').trim(),
+          from,
+          to,
+          price,
+          label: String(row?.label || '').trim(),
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.from.localeCompare(b.from));
+  }
+
+  function ensureRoomRates(room) {
+    const existing = normalizeRateRows(room?.rates || []);
+    if (existing.length) {
+      return { ...room, rates: existing.map(({ from, to, price, label }) => ({ from, to, price, label })) };
+    }
+    return {
+      ...room,
+      rates: defaultSeasonRates(room?.price),
+    };
+  }
+
+  function applyCmsRoomRates(detail, item) {
+    const rows = normalizeRateRows(item?.room_rates || item?.roomRates || []);
+    if (!rows.length || !detail) return detail;
+
+    const byRoom = new Map();
+    rows.forEach((row) => {
+      const key = row.room || '__default__';
+      if (!byRoom.has(key)) byRoom.set(key, []);
+      byRoom.get(key).push({ from: row.from, to: row.to, price: row.price, label: row.label });
+    });
+
+    const rooms = (detail.rooms || []).map((room) => {
+      const matched =
+        byRoom.get(String(room.name || '').trim()) ||
+        byRoom.get('__default__') ||
+        null;
+      if (!matched?.length) return ensureRoomRates(room);
+      return { ...room, rates: matched, price: matched[0].price || room.price };
+    });
+
+    byRoom.forEach((rates, name) => {
+      if (name === '__default__') return;
+      if (rooms.some((r) => String(r.name || '').trim() === name)) return;
+      rooms.push({
+        name,
+        price: rates[0]?.price || '',
+        bed: 'สอบถามรายละเอียดเตียง',
+        photos: 6,
+        amenities: item?.amenities || [],
+        rates,
+      });
+    });
+
+    detail.rooms = rooms.map(ensureRoomRates);
+    return detail;
+  }
+
+  function resolveRoomPrice(room, hotel, dateStr) {
+    const rates = normalizeRateRows(room?.rates || []);
+    const basePrice = room?.price || hotel?.price || '';
+    if (!dateStr) {
+      return {
+        price: basePrice,
+        label: rates.length ? 'เริ่มต้น' : 'เริ่มต้น',
+        matched: false,
+        unavailable: false,
+      };
+    }
+    const hit = rates.find((r) => dateStr >= r.from && dateStr <= r.to);
+    if (hit) {
+      return {
+        price: hit.price,
+        label: hit.label || `ราคา ${formatThaiShortDate(hit.from)} – ${formatThaiShortDate(hit.to)}`,
+        matched: true,
+        unavailable: false,
+        from: hit.from,
+        to: hit.to,
+      };
+    }
+    if (rates.length) {
+      return {
+        price: '',
+        label: 'ไม่มีราคาช่วงนี้ — สอบถามเพิ่ม',
+        matched: false,
+        unavailable: true,
+      };
+    }
+    return {
+      price: basePrice,
+      label: 'เริ่มต้น',
+      matched: false,
+      unavailable: false,
+    };
+  }
+
+  function roomDateBarHtml() {
+    const today = toIsoDate(new Date());
+    return `<div class="hd-rate-bar" data-hd-rate-bar>
+      <div class="hd-rate-bar__field">
+        <label class="hd-rate-bar__label" for="hdCheckInDate">วันเข้าพัก</label>
+        <input class="hd-rate-bar__input" type="date" id="hdCheckInDate" name="check_in" min="${esc(today)}" value="" />
+      </div>
+      <p class="hd-rate-bar__hint" data-hd-rate-hint>เลือกวันที่เพื่อดูราคาห้องตามช่วงที่เปิดจอง</p>
+      <button type="button" class="hd-rate-bar__reset" data-hd-rate-reset hidden>ล้างวันที่</button>
+    </div>`;
+  }
+
+  function hotelSearchQuery(item, detail) {
+    return encodeURIComponent(
+      [item?.title || detail?.name || '', 'เกาะมุกต์', 'ตรัง']
+        .filter(Boolean)
+        .join(' ')
+    );
+  }
+
+  function bookingChannels(item, detail, contact) {
+    const q = hotelSearchQuery(item, detail);
+    const phone = String(detail?.phone || item?.phone || '0910401234').replace(/[^\d+]/g, '');
+    const lineId = String(item?.line_id || detail?.lineId || '@talaytrang').trim();
+    const lineClean = lineId.replace(/^@+/, '');
+    const lineUrl = `https://line.me/R/ti/p/@${encodeURIComponent(lineClean)}`;
+    const agentUrl = contact || 'contact.html';
+    const custom = detail?.bookingLinks || item?.bookingLinks || {};
+
+    return [
+      {
+        id: 'agent',
+        label: 'จองผ่านเอเย่นต์',
+        href: custom.agent || agentUrl,
+        className: 'hd-book__btn hd-book__btn--agent',
+        external: false,
+      },
+      {
+        id: 'line',
+        label: 'จองผ่าน LINE',
+        href: custom.line || lineUrl,
+        className: 'hd-book__btn hd-book__btn--line',
+        external: true,
+      },
+      {
+        id: 'agoda',
+        label: 'จองผ่าน Agoda',
+        href: custom.agoda || `https://www.agoda.com/search?city=&text=${q}`,
+        className: 'hd-book__btn hd-book__btn--agoda',
+        external: true,
+      },
+      {
+        id: 'trip',
+        label: 'จองผ่าน Trip.com',
+        href: custom.trip || `https://th.trip.com/hotels/list?keyword=${q}`,
+        className: 'hd-book__btn hd-book__btn--trip',
+        external: true,
+      },
+      {
+        id: 'phone',
+        label: 'โทรจอง',
+        href: custom.phone || `tel:${phone}`,
+        className: 'hd-book__btn hd-book__btn--phone',
+        external: false,
+      },
+    ];
+  }
+
+  function bookingBarHtml(item, detail, contact) {
+    const channels = bookingChannels(item, detail, contact);
+    const buttons = channels
+      .map((ch) => {
+        const extra = ch.external ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a class="${ch.className}" href="${esc(ch.href)}"${extra}>${esc(ch.label)}</a>`;
+      })
+      .join('');
+    return `<section class="hd-book" id="hd-book" aria-label="ช่องทางจองที่พัก">
+      <div class="hd-book__head">
+        <h3 class="hd-book__title">จองที่พักนี้</h3>
+        <p class="hd-book__sub">เลือกช่องทางที่สะดวก — เอเย่นต์ท้องถิ่น หรือแพลตฟอร์มออนไลน์</p>
+      </div>
+      <div class="hd-book__actions">${buttons}</div>
+    </section>`;
+  }
+
   function roomCardHtml(room, hotel, contact, roomIndex = 0) {
     const gallery = hotel._gallery || hotel.gallery || [];
     const img =
@@ -751,7 +996,14 @@
       )
       .join('');
     const href = contact || 'contact.html';
-    return `<article class="hd-room">
+    const resolved = resolveRoomPrice(room, hotel, '');
+    const price = formatRoomPrice(resolved.price);
+    const ratesJson = esc(JSON.stringify(normalizeRateRows(room.rates || []).map(({ from, to, price: p, label }) => ({ from, to, price: p, label }))));
+    const priceHtml = `<div class="hd-room__price" data-hd-room-price>
+          <span class="hd-room__price-label" data-hd-price-label>${esc(resolved.label)}</span>
+          <strong class="hd-room__price-value" data-hd-price-value>${price ? `฿ ${esc(price)}` : 'สอบถามราคา'}</strong>
+        </div>`;
+    return `<article class="hd-room" data-hd-room data-base-price="${esc(String(room.price || hotel.price || ''))}" data-rates="${ratesJson}">
       <div class="hd-room__media">
         <img src="${esc(img)}" alt="${esc(room.name)}" loading="lazy" decoding="async">
         <span class="hd-room__photos">${lucide('camera', 'icon')} ${esc(String(room.photos || 8))}</span>
@@ -763,7 +1015,9 @@
         <a class="hd-room__detail" href="${esc(href)}">รายละเอียดห้องพัก</a>
       </div>
       <div class="hd-room__action">
-        <a class="hd-room__btn" href="${esc(href)}">ดูห้องว่าง</a>
+        ${priceHtml}
+        <a class="hd-room__btn" href="#hd-book">จองห้องนี้</a>
+        <a class="hd-room__btn hd-room__btn--ghost" href="${esc(href)}">สอบถามเอเย่นต์</a>
       </div>
     </article>`;
   }
@@ -1011,6 +1265,7 @@
         </header>
 
         ${galleryHtml(item)}
+        ${bookingBarHtml(item, detail, contact)}
         ${highlightHtml}
 
         ${surroundingsHtml}
@@ -1018,6 +1273,7 @@
 
         <section class="hd-section hd-section--rooms">
           <h3 class="hd-section__title">${isMember ? 'รายละเอียดบริการ' : 'เลือกห้องพักของคุณ'}</h3>
+          ${roomDateBarHtml()}
           <div class="hd-room-list">${roomsHtml}</div>
         </section>
 
@@ -1164,7 +1420,70 @@
     });
 
     initHotelGalleryLightbox(root);
+    initRoomRateChecker(root);
     refreshLucide(root);
+  }
+
+  function initRoomRateChecker(root) {
+    const bar = root.querySelector('[data-hd-rate-bar]');
+    const input = root.querySelector('#hdCheckInDate');
+    if (!bar || !input) return;
+
+    const hint = bar.querySelector('[data-hd-rate-hint]');
+    const reset = bar.querySelector('[data-hd-rate-reset]');
+    const rooms = [...root.querySelectorAll('[data-hd-room]')];
+
+    const update = () => {
+      const dateStr = String(input.value || '').trim();
+      if (reset) reset.hidden = !dateStr;
+
+      rooms.forEach((card) => {
+        let rates = [];
+        try {
+          rates = JSON.parse(card.getAttribute('data-rates') || '[]');
+        } catch {
+          rates = [];
+        }
+        const room = {
+          price: card.getAttribute('data-base-price') || '',
+          rates,
+        };
+        const resolved = resolveRoomPrice(room, { price: room.price }, dateStr);
+        const labelEl = card.querySelector('[data-hd-price-label]');
+        const valueEl = card.querySelector('[data-hd-price-value]');
+        const priceWrap = card.querySelector('[data-hd-room-price]');
+        if (labelEl) labelEl.textContent = resolved.label;
+        if (valueEl) {
+          const formatted = formatRoomPrice(resolved.price);
+          valueEl.textContent = formatted ? `฿ ${formatted}` : 'สอบถามราคา';
+        }
+        if (priceWrap) {
+          priceWrap.classList.toggle('is-matched', !!resolved.matched);
+          priceWrap.classList.toggle('is-unavailable', !!resolved.unavailable);
+        }
+      });
+
+      if (hint) {
+        if (!dateStr) {
+          hint.textContent = 'เลือกวันที่เพื่อดูราคาห้องตามช่วงที่เปิดจอง';
+        } else if (rooms.some((card) => card.querySelector('.hd-room__price.is-matched'))) {
+          hint.textContent = `แสดงราคาสำหรับวันเข้าพัก ${formatThaiShortDate(dateStr)}`;
+        } else if (rooms.some((card) => card.querySelector('.hd-room__price.is-unavailable'))) {
+          hint.textContent = `ยังไม่มีราคาที่กรอกไว้สำหรับ ${formatThaiShortDate(dateStr)} — สอบถามเอเย่นต์ได้`;
+        } else {
+          hint.textContent = `แสดงราคาสำหรับวันเข้าพัก ${formatThaiShortDate(dateStr)}`;
+        }
+      }
+    };
+
+    input.addEventListener('change', update);
+    input.addEventListener('input', update);
+    reset?.addEventListener('click', () => {
+      input.value = '';
+      update();
+      input.focus();
+    });
+    update();
   }
 
   window.KL_HOTEL_DETAIL = {

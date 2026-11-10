@@ -1,0 +1,420 @@
+{
+  "categories": [
+    {
+      "id": "daytrip",
+      "label": "ไปเช้าเย็นกลับ",
+      "title": "แพ็กเกจไปเช้า เย็นกลับ",
+      "subtitle": "ไปเช้าเย็นกลับ ทะเลตรัง 4 เกาะ เกาะเหลาเหลียง เกาะมุก เกาะไหง และเกาะรอก — เริ่มต้น 600 บาท ครบเรือ ไกด์ อาหาร และประกัน",
+      "packages": [
+        {
+          "id": "dl001",
+          "code": "DL001",
+          "title": "4 เกาะทะเลตรัง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก",
+          "price": "650",
+          "rating": "4.9",
+          "review_count": "4.8พัน",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260612-141642-be55380f.png",
+          "category": "daytrip"
+        },
+        {
+          "id": "dt001",
+          "code": "DT001",
+          "title": "4 เกาะทะเลตรัง : เรือทัวร์",
+          "subtitle": "ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก",
+          "price": "950",
+          "rating": "4.9",
+          "review_count": "4.8พัน",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260612-143741-9af064af.png",
+          "category": "daytrip"
+        },
+        {
+          "id": "ds001",
+          "code": "DS001",
+          "title": "4 เกาะทะเลตรัง : สปีดโบ๊ท",
+          "subtitle": "ถ้ำมรกต เกาะกระดาน เกาะแหวน เกาะเชือก",
+          "price": "1350",
+          "rating": "4.9",
+          "review_count": "4.8พัน",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2024/10/1.jpg",
+          "category": "daytrip"
+        },
+        {
+          "id": "ds002",
+          "code": "DS002",
+          "title": "เกาะรอก เกาะม้า : สปีดโบ๊ท",
+          "subtitle": "เกาะรอกนอก เกาะรอกใน เกาะม้า",
+          "price": "1650",
+          "rating": "4.9",
+          "review_count": "4.8พัน",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2024/10/2.jpg",
+          "category": "daytrip"
+        },
+        {
+          "id": "ds006",
+          "code": "DS006",
+          "title": "เกาะเหลาเหลียง เกาะกระดาน ถ้ำมรกต : สปีดโบ๊ท",
+          "subtitle": "เกาะเหลาเหลียง เกาะกระดาน ถ้ำมรกต",
+          "price": "2250",
+          "rating": "4.9",
+          "review_count": "500",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2025/08/Untitled-design.png",
+          "category": "daytrip"
+        },
+        {
+          "id": "dl003",
+          "code": "DL003",
+          "title": "เจาะลึกเกาะมุกต์ : เรือหางยาว",
+          "subtitle": "เจาะลึกเกาะมุกต์",
+          "price": "600",
+          "rating": "4.9",
+          "review_count": "4.8พัน",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/%E0%B8%96%E0%B9%89%E0%B8%B3%E0%B8%A1%E0%B8%A3%E0%B8%81%E0%B8%95-1.jpg",
+          "category": "daytrip"
+        },
+        {
+          "id": "dl004",
+          "code": "DL004",
+          "title": "เจาะลึกเกาะไหง : เรือหางยาว",
+          "subtitle": "เจาะลึกเกาะไหง",
+          "price": "600",
+          "rating": "4.9",
+          "review_count": "500",
+          "duration": "ประมาณ 8 ชั่วโมง",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2024/10/Untitled-design-2-1.png",
+          "category": "daytrip"
+        },
+        {
+          "id": "dl005",
+          "code": "DL005",
+          "title": "เกาะเหลาเหลียง เกาะตะเกียง : เรือหางยาว",
+          "subtitle": "เกาะเหลาเหลียง เกาะตะเกียง",
+          "price": "1350",
+          "rating": "4.8",
+          "review_count": "4.8 พัน",
+          "duration": "ประมาณ 7 ชั่วโมง",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260701-195336-da9e6334.png",
+          "category": "daytrip"
+        }
+      ]
+    },
+    {
+      "id": "overnight",
+      "label": "2 วัน 1 คืน",
+      "title": "แพ็กเกจ 2 วัน 1 คืน",
+      "subtitle": "เที่ยวทะเลตรังและเกาะมุกต์ พร้อมที่พัก 1 คืน เลือกรูปแบบเรือและจุดนอนได้",
+      "packages": [
+        {
+          "id": "p1-l001",
+          "code": "P1-L001",
+          "title": "ทะเลตรัง 4 เกาะ นอนปากเมง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "975",
+          "rating": "4.8",
+          "review_count": "4.8พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/Oneday3.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-l003",
+          "code": "P1-L003",
+          "title": "ทะเลตรัง 4 เกาะ นอนเกาะไหง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1550",
+          "rating": "4.8",
+          "review_count": "4 พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/08/Kohrok-22259_9033-min.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-l002",
+          "code": "P1-L002",
+          "title": "ทะเลตรัง 4 เกาะ นอนเมืองตรัง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "975",
+          "rating": "4.8",
+          "review_count": "4 พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/Oneday2.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-b001",
+          "code": "P1-B001",
+          "title": "ทะเลตรัง 4 เกาะ นอนปากเมง : เรือทัวร์",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1375",
+          "rating": "4.8",
+          "review_count": "4 พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260702-154852-d4050934.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-b003",
+          "code": "P1-B003",
+          "title": "ทะเลตรัง 4 เกาะ นอนเกาะไหง : เรือทัวร์",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "3100",
+          "rating": "4.8",
+          "review_count": "4 พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวตรังไปเช้าเย็นกลับ27.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-b002",
+          "code": "P1-B002",
+          "title": "ทะเลตรัง 4 เกาะ นอนในเมืองตรัง : เรือทัวร์",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1675",
+          "rating": "4.8",
+          "review_count": "4 พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวตรังไปเช้าเย็นกลับ12.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-007",
+          "code": "P1-007",
+          "title": "เที่ยวเกาะเหลาเหลียง นอนเกาะลิบง : เรือหางยาว",
+          "subtitle": "เกาะเหลาเหลียง→เกาะลิบง",
+          "price": "1500",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวเกาะเหลาเหลียงวันเดย์25.jpg",
+          "category": "overnight"
+        },
+        {
+          "id": "p1-008",
+          "code": "P1-008",
+          "title": "ทะเลตรัง + เกาะรอก นอนในเมืองตรัง : เรือทัวร์ : เรือสปีดโบ๊ท",
+          "subtitle": "ทะเลตรัง 4 เกาะ → เกาะรอก + เกาะม้า",
+          "price": "2500",
+          "rating": "4.8",
+          "review_count": "4.8 พัน",
+          "duration": "2 วัน 1 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวเกาะรอกวันเดียว6.jpg",
+          "category": "overnight"
+        }
+      ]
+    },
+    {
+      "id": "packages3d2n",
+      "label": "3 วัน 2 คืน",
+      "title": "แพ็กเกจ 3 วัน 2 คืน",
+      "subtitle": "ทริปยาวขึ้น เที่ยวทะเลตรังครบ พัก 2 คืน เหมาะกับครอบครัวและกลุ่มเพื่อน",
+      "packages": [
+        {
+          "id": "p2-l001",
+          "code": "P2-L001",
+          "title": "ท่องทะเลตรัง 4 เกาะ นอนปากเมง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1300",
+          "rating": "4.8",
+          "review_count": "4.8พัน",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260611-165033-13eb5a00.jpg",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-l003",
+          "code": "P2-L003",
+          "title": "ท่องทะเลตรัง 4 เกาะ นอนเกาะไหง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "2050",
+          "rating": "4.8",
+          "review_count": "4.8พัน",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260630-150838-20477dd8.jpg",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-l002",
+          "code": "P2-L002",
+          "title": "ทะเลตรัง 4 เกาะ นอนเมืองตรัง : เรือหางยาว",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1400",
+          "rating": "4.8",
+          "review_count": "4 พัน",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260806-144307-d8f60fde.jpg",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-b001",
+          "code": "P2-B001",
+          "title": "ท่องทะเล 4 เกาะ นอนปากเมง : เรือใหญ่",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1700",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260806-163946-08bb33c0.png",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-b003",
+          "code": "P2-B003",
+          "title": "ท่องทะเลตรัง 4 เกาะ นอนเกาะไหง : เรือใหญ่",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก (พักเกาะไหง 2 คืน)",
+          "price": "3600",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260807-201432-a42bab42.png",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-b002",
+          "code": "P2-B002",
+          "title": "ท่องทะเลตรัง 4 เกาะ นอนเมืองตรัง : เรือใหญ่",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1850",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/08/P3110070-min.jpg",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-007",
+          "code": "P2-007",
+          "title": "นั่งตุ๊กตุ๊ก เที่ยวเมืองตรัง ท่องทะเล City Tour นอนเมือง",
+          "subtitle": "เมืองตรัง → ทะเล 4 เกาะ → City Tour",
+          "price": "4000",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260809-165757-bb85cb21.png",
+          "category": "packages3d2n"
+        },
+        {
+          "id": "p2-008",
+          "code": "P2-008",
+          "title": "ทะเลตรัง + เกาะรอก นอนในเมืองตรัง",
+          "subtitle": "ทะเลตรัง 4 เกาะ → เกาะรอก + เกาะม้า (พักเมืองตรัง 2 คืน)",
+          "price": "3500",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "3 วัน 2 คืน",
+          "image": "https://xn--72c1af2cbv3ee4v.com/assets/uploads/20260809-171049-ddd44daf.png",
+          "category": "packages3d2n"
+        }
+      ]
+    },
+    {
+      "id": "packages4d3n",
+      "label": "4 วัน 3 คืน",
+      "title": "แพ็กเกจ 4 วัน 3 คืน",
+      "subtitle": "โปรแกรมเต็มอิ่มหลายวัน พัก 3 คืน เที่ยวทะเลตรังและกิจกรรมเสริม",
+      "packages": [
+        {
+          "id": "p3-001",
+          "code": "P3-L001",
+          "title": "ทะเลตรัง 4 เกาะ นอนหาดปากเมง 4 วัน 3 คืน",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1850",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/Oneday3.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-002",
+          "code": "P3-L003",
+          "title": "ทะเลตรัง 4 เกาะ นอนเกาะไหง 4 วัน 3 คืน",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก (พักเกาะไหง 2 คืน)",
+          "price": "2649",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวตรังไปเช้าเย็นกลับ14.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-003",
+          "code": "P3-L002",
+          "title": "ทะเลตรัง 4 เกาะ นอนในเมืองตรัง 4 วัน 3 คืน",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "1850",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวตรังไปเช้าเย็นกลับ29.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-004",
+          "code": "P3-B001",
+          "title": "ทะเลตรัง 4 เกาะ นอนหาดปากเมง 4 วัน 3 คืน",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "2150",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/1352.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-005",
+          "code": "P3-B003",
+          "title": "ทะเลตรัง 4 เกาะ นอนเกาะไหง 4 วัน 3 คืน",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก (พักเกาะไหง 2 คืน)",
+          "price": "4050",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/GOPR0493.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-006",
+          "code": "P3-B002",
+          "title": "ทะเลตรัง 4 เกาะ นอนในเมืองตรัง 4 วัน 3 คืน",
+          "subtitle": "ถ้ำมรกต → เกาะกระดาน → เกาะแหวน → เกาะเชือก",
+          "price": "2450",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/08/P3110070-min.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-007",
+          "code": "P3-007",
+          "title": "นั่งตุ๊กตุ๊ก เที่ยวเมืองตรัง ท่องทะเล City Tour 4 วัน 3 คืน",
+          "subtitle": "เมืองตรัง → ทะเล 4 เกาะ → City Tour",
+          "price": "4900",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวตรังไปเช้าเย็นกลับ27.jpg",
+          "category": "packages4d3n"
+        },
+        {
+          "id": "p3-008",
+          "code": "P3-008",
+          "title": "ทะเลตรัง + เกาะรอก นอนในเมืองตรัง 4 วัน 3 คืน",
+          "subtitle": "ทะเลตรัง 4 เกาะ → เกาะรอก + เกาะม้า (พักเมืองตรัง 2 คืน)",
+          "price": "4400",
+          "rating": "4.8",
+          "review_count": "500",
+          "duration": "4 วัน 3 คืน",
+          "image": "https://www.xn--72c1af3ci9dk0j.com/wp-content/uploads/2019/06/เที่ยวเกาะรอกวันเดียว5.jpg",
+          "category": "packages4d3n"
+        }
+      ]
+    }
+  ]
+}

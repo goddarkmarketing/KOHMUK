@@ -63,6 +63,7 @@ $backLabel = $sections[$section]['label'];
 $previewImg = site_content_public_image($item['image_path'] ?? null) ?: 'https://images.pexels.com/photos/14573822/pexels-photo-14573822.jpeg?auto=compress&cs=tinysrgb&w=640';
 $galleryPaths = site_content_gallery_paths($item);
 $amenitiesText = site_content_amenities_text($item);
+$roomRatesText = site_content_room_rates_text($item);
 
 admin_header(($id ? 'แก้ไข' : 'เพิ่ม') . ' — ' . $sections[$section]['label'], $activeKey);
 ?>
@@ -173,13 +174,19 @@ admin_header(($id ? 'แก้ไข' : 'เพิ่ม') . ' — ' . $sections
       </label>
 
       <label class="cms-field cms-field--section cms-field--tour cms-field--boat cms-field--hotel">
-        <span class="cms-field__label" id="lblPrice">ราคา</span>
+        <span class="cms-field__label" id="lblPrice">ราคาเริ่มต้น</span>
         <input type="text" name="price" id="fPrice" value="<?= e($item['price'] ?? '') ?>" placeholder="3,500" />
       </label>
 
       <label class="cms-field cms-field--section cms-field--tour">
         <span class="cms-field__label">ราคาเดิม (ขีดฆ่า)</span>
         <input type="text" name="price_old" id="fPriceOld" value="<?= e($item['price_old'] ?? '') ?>" placeholder="4,200" />
+      </label>
+
+      <label class="cms-field cms-field--section cms-field--hotel cms-field--full">
+        <span class="cms-field__label">ราคาห้องตามช่วงวันที่</span>
+        <textarea name="room_rates" id="fRoomRates" rows="6" placeholder="ห้องดีลักซ์วิวทะเล | 2026-11-01 | 2027-03-31 | 4740 | ไฮซีซัน&#10;ห้องดีลักซ์วิวทะเล | 2027-05-01 | 2027-10-31 | 3900 | โลว์ซีซัน"><?= e($roomRatesText) ?></textarea>
+        <span class="cms-field__hint">บรรทัดละ 1 ช่วง — รูปแบบ: ชื่อห้อง | วันเริ่ม | วันสิ้นสุด | ราคา | ป้ายชื่อ (ไม่บังคับ)<br>ถ้าไม่ใส่ชื่อห้อง จะใช้กับทุกห้อง — ลูกค้าเช็ควันเข้าพักแล้วจะขึ้นราคาในช่วงนั้น</span>
       </label>
 
       <label class="cms-field">
